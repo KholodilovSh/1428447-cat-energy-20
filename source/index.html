@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/35x35" alt="">
+    </a>
+    <h1 class="visually-hidden">cat energy</h1>
+    <div class="page-header__name">
+      <span class="page-header__header-first">cat</span>
+      <span class="page-header__header-second">enargy</span>
+    </div>
+    <button type="button">
+      <img src="https://via.placeholder.com/24x16" alt="">
+    </button>
+  </header>
+  <div class="promo">
+    <h2 class="promo__header">Функциональное питание для котов</h2>
+    <p class="promo__slogan">Занялся собой? Займись котом!</p>
+    <a class="promo__programm" href="#">
+      подобрать программу
+    </a>
+  </div>
+  <div class="programs">
+    <h2 class="visually-hidden">рекомендуемые программы</h2>
+    <div class="programs__article">
+      <img src="https://via.placeholder.com/50x53" alt="">
+      <h3 class="programs__header">
+        Похудение
+      </h3>
+      <p class="programs__text">
+        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+      </p>
+      <a class="programs__decision" href="#">
+        каталог slim
+        <img class="programs__pointer" src="https://via.placeholder.com/32x10" alt="">
+      </a>
+    </div>
+    <div class="programs__article">
+      <img src="https://via.placeholder.com/50x53" alt="">
+      <h3 class="programs__header">
+        Набор массы
+      </h3>
+      <p class="programs__text">
+        Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+      </p>
+      <a class="programs__decision" href="#">
+        каталог pro
+        <img class="programs__pointer" src="https://via.placeholder.com/32x10" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="special">
+    <h2 class="special__header"></h2>
+    <ul class="special__list">
+      <li class="special">
+        <img class="special__pic" src="https://via.placeholder.com/60x60" alt="">
+        <p class="special__text">
+          Функциональное питание содержит только полезные питательные вещества.
+        </p>
+      </li>
+      <li class="special">
+        <img class="special__pic" src="https://via.placeholder.com/60x60" alt="">
+        <p class="special__text">
+          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+        </p>
+      </li>
+      <li class="special">
+        <img class="special__pic" src="https://via.placeholder.com/60x60" alt="">
+        <p class="special__text">
+          Замените один-два приема обычной еды на наше функциональное питание.
+        </p>
+      </li>
+      <li class="special">
+        <img class="special__pic" src="https://via.placeholder.com/60x60" alt="">
+        <p class="special__text">
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <div class="advertising">
+    <h2 class="advertising__header">Живой пример</h2>
+    <p class="advertising__story">
+      Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+    </p>
+    <ul class="advertising__list">
+      <li class="advertising__item">
+        <p class="advertising__number">5 КГ</p>
+        <p class="advertising__aspect">снижение веса</p>
+      </li>
+      <li class="advertising__item">
+        <p class="advertising__number">60 ДНЕЙ</p>
+        <p class="advertising__aspect">затрачено времени</p>
+      </li>
+      <p class="advertising__result">Затраты на питание: 15 000 РУБ.</p>
+    </ul>
+    <div class="advertising__slider">
+      <img class="advertising__before" src="https://via.placeholder.com/311x232" alt="Жирный кот">
+      <img class="advertising__after visually-hidden" src="https://via.placeholder.com/251x240" alt="Тощий кот">
+      <div class="advertising_switch">
+        <p class="advertising__was">было</p>
+        <!-- сверстаем псевдоэлементом?? -->
+        <p class="advertising__now">стало</p>
+      </div>
+    </div>
+  </div>
+  <div class="contacts">
+    <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
+    <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+  </div>
+  <div class="location">
+    <img src="https://via.placeholder.com/320x362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+  </div>
+  <footer class="footer-mobile">
+    <div class="footer-mobile__name">
+      <span class="footer-mobile__header-first">cat</span>
+      <span class="footer-mobile__header-second">enargy</span>
+    </div
+    <ul class="social-buttons">
+      <li class="social-buttons__item">
+        <img  class="social-buttons__icon vkontakte" src="https://via.placeholder.com/23x16" alt="">
+      </li>
+      <li class="social-buttons__item">
+        <img  class="social-buttons__icon instagram" src="https://via.placeholder.com/16x16" alt="">
+      </li>
+      <li class="social-buttons__item">
+        <img  class="social-buttons__icon facebook" src="https://via.placeholder.com/22x22" alt="">
+      </li>
+    </ul>
 
-  </body>
+    <div class="copyright">
+      <p class="copyright__name">HTML Academy</p>
+      <img class="copyright__icon" src="https://via.placeholder.com/27x34" alt="">
+    </div>
+  </footer>
+  <section class="modal main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item">
+        <a href="#">главная</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="catalog.html">каталог продукции</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="form.html">подбор программы</a>
+      </li>
+    </ul>
+  </section>
+</body>
 </html>
