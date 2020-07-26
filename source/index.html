@@ -101,11 +101,16 @@
       <div class="advertising__slider">
         <img class="advertising__before" src="https://via.placeholder.com/311x232" alt="Жирный кот">
         <img class="advertising__after visually-hidden" src="https://via.placeholder.com/251x240" alt="Тощий кот">
-        <div class="advertising_switch">
-          <p class="advertising__was">было</p>
-          <!-- сверстаем псевдоэлементом?? -->
-          <p class="advertising__now">стало</p>
-        </div>
+        <ul class="advertising__radio-list">
+          <li class="advertising__radiobatton">
+            <input class="advertising__radiobox visually-hidden" id="before" type="radio" name="cat" value="before" checked>
+            <label for="before">было</label>
+          </li>
+          <li class="advertising__radiobatton">
+            <input class="advertising__radiobox visually-hidden" id="after" type="radio" name="cat" value="after">
+            <label for="after">стало</label>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
