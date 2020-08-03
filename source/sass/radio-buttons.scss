@@ -15,8 +15,8 @@
 .radio-buttons__item {
   padding-bottom: 13px;
   list-style-type: none;
-}
 
-.radio-buttons__item:last-of-type {
-  padding-bottom: 0;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }

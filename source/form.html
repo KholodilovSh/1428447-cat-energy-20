@@ -2,9 +2,8 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи (форма) </title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -39,18 +38,20 @@
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="about-cat">
-        <p>
-          <label for="form__name">имя:*</label>
-          <input id="form__name" type="text" name="form__name" value="Барсик" required>
-        </p>
-        <p>
-          <label for="form__weight">вес (кг):*</label>
-          <input id="form__weight" type="text" name="form__weight" value="7" required>
-        </p>
-        <p>
-          <label for="form__years">возраст (лет):</label>
-          <input id="form__years" type="text" name="form__years" value="7" required>
-        </p>
+        <fieldset>
+          <p>
+            <label for="form__name">имя:*</label>
+            <input id="form__name" type="text" name="form__name" value="Барсик" required>
+          </p>
+          <p>
+            <label for="form__weight">вес (кг):*</label>
+            <input id="form__weight" type="text" name="form__weight" value="7" required>
+          </p>
+          <p>
+            <label for="form__years">возраст (лет):</label>
+            <input id="form__years" type="text" name="form__years" value="7" required>
+          </p>
+        </fieldset>
       </div>
 
       <ul class="radio-buttons">
@@ -71,14 +72,14 @@
       <fieldset class="owner">
         <legend class="owner__header">Контактные данные (владельца кота)</legend>
         <label for="owner__email">email:*</label>
-        <input id="owner__email" type="email" name="owner__email" value="kuklachev@gmail.com" required>
+        <input  class="owner__email" id="owner__email" type="email" name="owner__email" value="kuklachev@gmail.com" required>
         <label for="owner__phone">телефон:*</label>
-        <input id="owner__phone" type="tel" name="owner__phone" value="8 (960) 900-60-90" required>
+        <input class="owner__phone" id="owner__phone" type="tel" name="owner__phone" value="8 (960) 900-60-90" required>
       </fieldset>
 
       <fieldset class="comments">
-        <legend class="comments__header" >Комментарий:</legend>
-        <textarea  id="comments" name="comments" rows="5" cols="60" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <legend class="comments__header">Комментарий:</legend>
+        <textarea class="comments__text" id="comments" name="comments" rows="5" cols="60" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="append">
@@ -117,8 +118,8 @@
     <section class="location">
       <img src="https://via.placeholder.com/320x362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
     </section>
-    <a class="footer-mobile__link" href="index.html">
-      <img class="footer-mobile__logo" src="https://via.placeholder.com/128x24" alt="">
+    <a class="footer-logo" href="index.html">
+      <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
     </a>
     <ul class="social-buttons">
       <li class="social-buttons__item">

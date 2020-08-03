@@ -16,14 +16,14 @@
   margin-top: 0;
   margin-bottom: 20px;
   background-color: $basic-grey;
-}
 
-.programs__article:first-of-type {
-  margin-top: 22px;
-}
+  &:first-of-type {
+    margin-top: 22px;
+  }
 
-.programs__article:last-of-type {
-  margin-bottom: 27px;
+  &:last-of-type {
+    margin-bottom: 27px;
+  }
 }
 
 .programs__text {

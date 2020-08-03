@@ -19,7 +19,8 @@
   text-transform: none;
 }
 
-.owner input {
+.owner__phone,
+.owner__email {
   padding: 13px 13px 13px 13px;
   border: 1px solid $special_grey;
   text-transform: uppercase;
