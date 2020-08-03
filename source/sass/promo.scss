@@ -1,7 +1,9 @@
 .promo {
   color: $white;
-  background-color: $basic-green;
   text-align: center;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 
   @include obvodka(blue);
 }
@@ -10,6 +12,9 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
+  padding: 27px 0 25px 0;
+  margin: 0;
+  background-color: $basic-green;
 }
 
 .promo__slogan {
@@ -17,11 +22,23 @@
   font-weight: normal;
   line-height: 14px;
   text-transform: uppercase;
+  padding: 0 0 29px 0;
+  margin: 0;
+  background-color: $basic-green;
+}
+
+.promo__glass {
+  margin: 0;
+  padding: 0;
 }
 
 .promo__programm {
+  display: block;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: $basic-green;
 }

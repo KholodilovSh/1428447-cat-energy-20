@@ -1,8 +1,14 @@
 .form {
+  padding-bottom: 32px;
+
   @include obvodka(black);
 }
 
 .form__submit {
+  margin-bottom: 21px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;

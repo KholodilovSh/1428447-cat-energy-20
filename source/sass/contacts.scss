@@ -1,6 +1,9 @@
 .contacts {
   font-weight: normal;
   background-color: $white;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 22px;
 
   &--catalog {
     background-color: $basic-grey;

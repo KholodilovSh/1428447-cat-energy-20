@@ -37,6 +37,15 @@ img {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
 @import "page-header.scss";
 @import "main-menu.scss";
 @import "promo.scss";

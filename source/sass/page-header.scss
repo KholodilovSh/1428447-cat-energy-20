@@ -1,5 +1,7 @@
 .page-header {
   @include obvodka(blue);
+  padding-top: 12px;
+  padding-bottom: 14px;
 }
 
 .page-header__button {

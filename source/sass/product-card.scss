@@ -1,4 +1,6 @@
 .product-card {
+  padding-top: 19px;
+  padding-bottom: 25px;
   font-style: normal;
   list-style-type: none;
   background-color: $basic-grey;
@@ -7,6 +9,7 @@
 }
 
 .product-card__name {
+  padding-bottom: 18px;
   font-size: 16px;
   line-height: 20px;
   color: $special_dark-grey-2;
@@ -21,6 +24,11 @@
 }
 
 .product-card__order {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  margin: 0 20px 0 20px;
+  text-align: center;
   font-size: 16px;
   line-height: 16px;
   color: $white;

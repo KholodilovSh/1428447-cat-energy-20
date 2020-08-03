@@ -1,7 +1,7 @@
 .programs {
   font-weight: normal;
   color: $black;
-  background-color: $basic-grey;
+  background-color: $white;
 
   @include obvodka;
 }
@@ -10,6 +10,20 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+.programs__article {
+  margin-top: 0;
+  margin-bottom: 20px;
+  background-color: $basic-grey;
+}
+
+.programs__article:first-of-type {
+  margin-top: 22px;
+}
+
+.programs__article:last-of-type {
+  margin-bottom: 27px;
 }
 
 .programs__text {
