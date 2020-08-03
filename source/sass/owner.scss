@@ -1,0 +1,22 @@
+.owner {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $white;
+  text-transform: uppercase;
+
+  @include obvodka(blue);
+}
+
+.owner__header {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  text-transform: none;
+}
+
+.owner input {
+  border: 1px solid $special_grey;
+  text-transform: uppercase;
+}

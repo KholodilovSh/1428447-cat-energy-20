@@ -1,0 +1,9 @@
+.social-buttons {
+  background-color: $basic-grey;
+
+  @include obvodka;
+}
+
+.social-buttons__item {
+  list-style-type: none;
+}

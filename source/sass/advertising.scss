@@ -1,0 +1,50 @@
+.advertising {
+  font-weight: normal;
+  color: $black;
+  background-color: $grey-3;
+
+  @include obvodka;
+}
+
+.advertising__header {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advertising__item {
+  list-style-type: none;
+}
+
+.advertising__story,
+.advertising__aspect {
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+}
+
+.advertising__story {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.advertising__aspect {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.advertising__number {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.advertising__result {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.advertising__radiobatton {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style-type: none;
+}

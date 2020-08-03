@@ -1,0 +1,27 @@
+.promo {
+  color: $white;
+  background-color: $basic-green;
+  text-align: center;
+
+  @include obvodka(blue);
+}
+
+.promo__header {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__programm {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+}

@@ -1,1 +1,63 @@
-// Начните писать стили здесь
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+@import "variables.scss";
+@import "mixin.scss";
+
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import "page-header.scss";
+@import "main-menu.scss";
+@import "promo.scss";
+@import "programs.scss";
+@import "special.scss";
+@import "advertising.scss";
+@import "contacts.scss";
+@import "footer-logo.scss";
+@import "location.scss";
+@import "social-buttons.scss";
+@import "copyright.scss";
+@import "main-header.scss";
+@import "main-catalog.scss";
+@import "product-card.scss";
+@import "products.scss";
+@import "pad-products.scss";
+@import "gift.scss";
+@import "subheader.scss";
+@import "about-cat.scss";
+@import "radio-buttons.scss";
+@import "owner.scss";
+@import "comments.scss";
+@import "append.scss";
+@import "form.scss";

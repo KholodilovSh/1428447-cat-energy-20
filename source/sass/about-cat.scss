@@ -1,0 +1,17 @@
+.about-cat {
+  @include obvodka(yellow);
+}
+
+.about-cat,
+.about-cat input {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.about-cat input {
+  border: 1px solid $grey-6;
+}

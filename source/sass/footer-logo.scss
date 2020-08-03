@@ -1,0 +1,9 @@
+.footer-logo {
+  background-color: $basic-grey;
+
+  @include obvodka;
+}
+
+.footer-mobile__link {
+  @include obvodka;
+}

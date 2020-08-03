@@ -1,0 +1,40 @@
+.pad-products {
+  font-weight: normal;
+  color: $black;
+  background-color: $white;
+
+  @include obvodka(red);
+}
+
+.pad-products__header {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.pad-products__item {
+  list-style-type: none;
+}
+
+.pad-products__name {
+  font-size: 24px;
+  line-height: 24px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}
+
+.pad-products__unit,
+.pad-products__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
+
+.pad-products__button {
+  font-size: 16px;
+  line-height: 16px;
+  color: $white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+}

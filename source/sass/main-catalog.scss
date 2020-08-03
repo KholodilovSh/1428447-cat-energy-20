@@ -1,0 +1,7 @@
+.main-catalog {
+  font-weight: normal;
+  color: $black;
+  background-color: $white;
+
+  @include obvodka;
+}

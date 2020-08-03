@@ -1,0 +1,20 @@
+.form {
+  @include obvodka(black);
+}
+
+.form__submit {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $white;
+  background-color: $basic-green;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+.form__hint {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}

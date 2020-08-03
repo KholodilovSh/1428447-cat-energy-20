@@ -1,0 +1,30 @@
+.products {
+  font-weight: normal;
+  background-color: $white;
+  text-align: center;
+
+  @include obvodka;
+}
+
+.products__header {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-1;
+}
+
+.products__subheader {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.products__button {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  background-color: $basic-grey;
+}

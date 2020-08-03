@@ -1,0 +1,14 @@
+.radio-buttons {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey-2;
+  background-color: $white;
+  text-transform: uppercase;
+
+  @include obvodka;
+}
+
+.radio-buttons__item {
+  list-style-type: none;
+}

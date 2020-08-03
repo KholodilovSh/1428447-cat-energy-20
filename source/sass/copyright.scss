@@ -1,0 +1,10 @@
+.copyright {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $basic-grey;
+
+  @include obvodka(blue);
+}
