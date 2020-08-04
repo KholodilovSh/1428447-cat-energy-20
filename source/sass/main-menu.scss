@@ -1,0 +1,22 @@
+.main-menu {
+  @include obvodka;
+}
+
+.main-menu__list {
+  margin: 0;
+}
+
+.main-menu__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  background-color: $white;
+  list-style-type: none;
+}

@@ -1,0 +1,9 @@
+.footer-logo {
+  display: block;
+  text-align: center;
+  background-color: $basic-grey;
+  padding-top: 38px;
+  padding-bottom: 32px;
+
+  @include obvodka;
+}

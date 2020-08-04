@@ -1,0 +1,40 @@
+.products {
+  padding-top: 79px;
+  padding-bottom: 25px;
+  margin: 0;
+  font-weight: normal;
+  background-color: $white;
+  text-align: center;
+
+  @include obvodka;
+}
+
+.products__header {
+  margin: 0;
+  padding-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-1;
+}
+
+.products__subheader {
+  margin: 0;
+  padding-bottom: 21px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.products__button {
+  display: block;
+  margin: 0 20px 0 20px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  background-color: $basic-grey;
+}

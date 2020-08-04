@@ -1,0 +1,12 @@
+.social-buttons {
+  background-color: $basic-grey;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include obvodka;
+}
+
+.social-buttons__item {
+  list-style-type: none;
+}

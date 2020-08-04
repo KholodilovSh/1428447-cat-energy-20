@@ -1,0 +1,27 @@
+.owner {
+  margin-top: 26px;
+  padding-top: 32px;
+  padding-bottom: 27px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $white;
+  text-transform: uppercase;
+
+  @include obvodka(blue);
+}
+
+.owner__header {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  text-transform: none;
+}
+
+.owner__phone,
+.owner__email {
+  padding: 13px 13px 13px 13px;
+  border: 1px solid $special_grey;
+  text-transform: uppercase;
+}

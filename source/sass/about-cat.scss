@@ -1,0 +1,25 @@
+.about-cat {
+  padding-bottom: 9px;
+
+  @include obvodka(yellow);
+}
+
+.about-cat,
+.about-cat input {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.about-cat input {
+  padding: 13px 13px 13px 13px;
+  border: 1px solid $grey-6;
+}
+
+.about-cat p {
+  margin: 0;
+  padding-bottom: 13px;
+}

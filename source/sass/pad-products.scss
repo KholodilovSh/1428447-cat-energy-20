@@ -1,0 +1,59 @@
+.pad-products {
+  padding-top: 28px;
+  font-weight: normal;
+  color: $black;
+  background-color: $white;
+
+  @include obvodka(red);
+}
+
+.pad-products__header {
+  margin: 0;
+  padding-bottom: 35px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.pad-products__list {
+  margin: 0;
+  padding: 0;
+}
+
+.pad-products__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  list-style-type: none;
+}
+
+.pad-products p {
+  margin: 0;
+}
+
+.pad-products__name {
+  padding-bottom: 13px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}
+
+.pad-products__unit,
+.pad-products__price {
+  padding-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
+
+.pad-products__button {
+  padding: 13px 0 13px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 16px;
+  color: $white;
+  background-color: $basic-green;
+  border: none;
+  text-transform: uppercase;
+}

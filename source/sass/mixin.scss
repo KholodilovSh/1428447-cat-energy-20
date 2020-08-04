@@ -1,0 +1,5 @@
+// Служебная обводка
+@mixin obvodka( $color: red) {
+  outline: 2px solid $color; /* Пунктирная рамка */
+  outline-offset: -2px;
+}

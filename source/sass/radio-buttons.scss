@@ -1,0 +1,22 @@
+.radio-buttons {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey-2;
+  background-color: $white;
+  text-transform: uppercase;
+
+  @include obvodka;
+}
+
+.radio-buttons__item {
+  padding-bottom: 13px;
+  list-style-type: none;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
