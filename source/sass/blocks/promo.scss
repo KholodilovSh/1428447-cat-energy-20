@@ -1,35 +1,91 @@
 .promo {
-  color: $white;
+  position: relative;
   text-align: center;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  @media (max-width: $mobile-width-only) {
+    color: $white;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
 
   @include obvodka(blue);
 }
 
 .promo__header {
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 36px;
-  padding: 27px 0 25px 0;
   margin: 0;
-  background-color: $basic-green;
+  font-weight: normal;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 27px 0 25px 0;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 41px 0;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .promo__slogan {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 14px;
   text-transform: uppercase;
-  padding: 0 0 29px 0;
   margin: 0;
-  background-color: $basic-green;
+  font-weight: normal;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 0 29px 0;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 0 49px 0;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .promo__glass {
   margin: 0;
   padding: 0;
+
+  &--mobile {
+    @media (min-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+  &--tablet {
+    @media (max-width: $mobile-width-only), (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .promo__programm {
@@ -41,4 +97,14 @@
   padding-top: 7px;
   padding-bottom: 7px;
   background-color: $basic-green;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 230px;
+    left: center;
+    width: 244px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: $white;
+  }
 }

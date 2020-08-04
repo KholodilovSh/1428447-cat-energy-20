@@ -23,3 +23,13 @@ $black-1: #111111;
 
 // цвет тени в mixin.scss
 $grey-shadow: #c4c4c4;
+
+// Реальные брейкпойнты
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Для тестирования Mobile
+// $mobile-width-only: 1440px;
+// $tablet-width: 2000px;
+// $desktop-width: 3000px;

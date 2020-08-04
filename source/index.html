@@ -8,10 +8,12 @@
 </head>
 
 <body>
-  <header>
+  <header class="wrapper-header">
     <div class="page-header">
       <a class="page-header__link" href="#">
-        <img class="page-header__icon" src="img/logo-mobile.svg" width="196" height="37" alt="">
+        <img class="page-header__icon-mobile" src="img/logo-mobile.svg" width="196" height="37" alt="">
+        <img class="page-header__icon-tablet" src="img/logo-tablet.svg" width="174" height="52" alt="">
+        <img class="page-header__icon-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="">
       </a>
       <button class="page-header__button .page-header__button--hidden" type="button">
           <!-- Выпвдающее меню -->
@@ -36,7 +38,10 @@
     <section class="promo">
       <h2 class="promo__header">Функциональное питание для котов</h2>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__glass" src="https://via.placeholder.com/280x270" alt="Стакан">
+      <img class="promo__glass promo__glass--mobile" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Стакан">
+      <img class="promo__glass promo__glass--tablet" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="">
+      <img class="promo__glass promo__glass--desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="">
+
       <a class="promo__programm" href="#">
         подобрать программу
       </a>
@@ -45,7 +50,7 @@
     <section class="programs">
       <h2 class="visually-hidden">рекомендуемые программы</h2>
       <div class="programs__article">
-        <h3 class="programs__header">
+        <h3 class="programs__header programs__header--fat">
           Похудение
         </h3>
         <p class="programs__text">
@@ -56,7 +61,7 @@
         </a>
       </div>
       <div class="programs__article">
-        <h3 class="programs__header">
+        <h3 class="programs__header programs__header--slim">
           Набор массы
         </h3>
         <p class="programs__text">
