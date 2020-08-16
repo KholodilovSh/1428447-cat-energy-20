@@ -4,16 +4,46 @@
   background-color: $grey-3;
   padding-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
   @include obvodka;
 }
 
 .advertising__header {
   margin: 0;
+  padding-left: 20px;
   padding-top: 27px;
   padding-bottom: 33px;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-top: 43px;
+    padding-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+}
+
+.advertising__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.advertising__list {
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 250px;;
+  }
 }
 
 .advertising__item {
@@ -27,41 +57,94 @@
 }
 
 .advertising__story {
+  padding-left: 20px;
+  padding-right: 21px;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 54px;
+  }
 }
 
 .advertising__aspect {
   font-size: 12px;
   line-height: 12px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .advertising__number {
   font-size: 24px;
   line-height: 24px;
-  margin: 0 0 34px 0;
+  margin: 0;
   padding-top: 14px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .advertising__result {
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 42px;
+
+  @media (max-width: $mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
 }
 
 .advertising__before,
 .advertising__after {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 428px;
+    left: 30px;
+    width: 600px;
+    height: 620px;
+  }
+}
+
+.advertising__slider {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-3;
+  }
 }
 
 .advertising__radio-list {
   margin: 0;
+  @media (min-width: $tablet-width) {
+    padding-top: 357px;
+    padding-left: 86px;
+    padding-bottom: 64px;
+  }
 }
 
 .advertising__radiobatton {

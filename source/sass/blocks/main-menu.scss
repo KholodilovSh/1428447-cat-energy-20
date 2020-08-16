@@ -11,6 +11,10 @@
     flex-grow: 1;
     padding-top: 71px;
     //padding-bottom: 14px;
+    background-color: $basic_green;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 }
 
@@ -21,16 +25,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    // flex-wrap: wrap;
-    // min-height: 62px;
-    // align-items: center;
-    // font-size: 18px;
-    // line-height: 24px;
-    // padding: 0;
-    // margin-bottom: 60px;
+    justify-content: space-around;
   }
-
 }
 
 .main-menu__item {
@@ -39,7 +35,7 @@
   list-style-type: none;
   text-transform: uppercase;
   color: $black;
-  background-color: $white;
+  text-align: center;
 
   @media (max-width: $mobile-width-only) {
     padding-top: 22px;
@@ -47,14 +43,20 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
-    text-align: center;
+    background-color: $white;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center;
+    background-color: $white;
   }
 
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $white;
+  }
 }

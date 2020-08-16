@@ -4,6 +4,7 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 12px;
     padding-bottom: 14px;
+    padding-left: 20px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -13,27 +14,25 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
+    padding-right: 408px;
     //padding-bottom: 14px;
+    padding-left: 110px;
   }
 }
 
-.page-header__icon-mobile {
+.page-header__logo {
+
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
-.page-header__icon-tablet {
-  @media (max-width: $mobile-width-only), (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.page-header__icon-desktop {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
-}
 
 .page-header__button {
   @media (max-width: $mobile-width-only) {

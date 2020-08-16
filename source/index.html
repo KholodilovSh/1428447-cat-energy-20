@@ -9,11 +9,13 @@
 
 <body>
   <header class="wrapper-header">
-    <div class="page-header">
+    <div class="page-header container">
       <a class="page-header__link" href="#">
-        <img class="page-header__icon-mobile" src="img/logo-mobile.svg" width="196" height="37" alt="">
-        <img class="page-header__icon-tablet" src="img/logo-tablet.svg" width="174" height="52" alt="">
-        <img class="page-header__icon-desktop" src="img/logo-desktop.svg" width="202" height="59" alt="">
+        <picture>
+          <source media="(min-width: 868px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="page-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
+        </picture>
       </a>
       <button class="page-header__button .page-header__button--hidden" type="button">
           <!-- Выпвдающее меню -->
@@ -35,19 +37,20 @@
   </header>
   <main>
     <h1 class="visually-hidden">cat energy</h1>
-    <section class="promo">
-      <h2 class="promo__header">Функциональное питание для котов</h2>
+    <section class="promo container">
+      <h2 class="promo__header">Функциональное<br> питание для котов</h2>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__glass promo__glass--mobile" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Стакан">
-      <img class="promo__glass promo__glass--tablet" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="">
-      <img class="promo__glass promo__glass--desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="">
-
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png" width="552" height="499" >
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg" width="709" height="609">
+        <img class="promo__glass" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Стакан">
+      </picture>
       <a class="promo__programm" href="#">
         подобрать программу
       </a>
     </section>
 
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">рекомендуемые программы</h2>
       <div class="programs__article">
         <h3 class="programs__header programs__header--fat">
@@ -73,7 +76,7 @@
       </div>
     </section>
 
-    <section class="special">
+    <section class="special container">
       <h2 class="special__header">Как это работает</h2>
       <ul class="special__list">
         <li class="special__item">
@@ -91,25 +94,35 @@
       </ul>
     </section>
 
-    <section class="advertising">
+    <section class="advertising container">
       <h2 class="advertising__header">Живой пример</h2>
       <p class="advertising__story">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <ul class="advertising__list">
-        <li class="advertising__item">
-          <p class="advertising__number">5 КГ</p>
-          <p class="advertising__aspect">снижение веса</p>
-        </li>
-        <li class="advertising__item">
-          <p class="advertising__number">60 ДНЕЙ</p>
-          <p class="advertising__aspect">затрачено времени</p>
-        </li>
-        <p class="advertising__result">Затраты на питание: 15 000 РУБ.</p>
-      </ul>
+      <div class="advertising__wrapper">
+        <ul class="advertising__list">
+          <li class="advertising__item">
+            <p class="advertising__number">5 КГ</p>
+            <p class="advertising__aspect">снижение веса</p>
+          </li>
+          <li class="advertising__item">
+            <p class="advertising__number">60 ДНЕЙ</p>
+            <p class="advertising__aspect">затрачено времени</p>
+          </li>
+        </ul>
+        <p class="advertising__result">Затраты на питание: <br>15 000 РУБ.</p>
+      </div>
       <div class="advertising__slider">
-        <img class="advertising__before" src="https://via.placeholder.com/311x232" alt="Жирный кот">
-        <img class="advertising__after visually-hidden" src="https://via.placeholder.com/251x240" alt="Тощий кот">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+          <img class="advertising__before" src="img/before-mobile@1x.png" width="311" height="232" alt="Жирный кот">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+          <img class="advertising__after visually-hidden" src="img/after-mobile@1x.png" width="251" height="240" alt="Тощий кот">
+        </picture>
         <ul class="advertising__radio-list">
           <li class="advertising__radiobatton">
             <input class="advertising__radiobox visually-hidden" id="before" type="radio" name="cat" value="before" checked>
@@ -124,17 +137,19 @@
     </section>
   </main>
   <footer>
-    <section class="contacts">
-      <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <section class="contacts container">
+      <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
+      <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
     </section>
-    <section class="location">
-      <img src="https://via.placeholder.com/320x362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+    <section class="location container">
+      <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
+        <img class="location__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </a>
     </section>
-    <a class="footer-logo" href="#">
+    <a class="footer-logo container" href="#">
       <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
     </a>
-    <ul class="social-buttons">
+    <ul class="social-buttons container">
       <li class="social-buttons__item">
         <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
       </li>
@@ -146,11 +161,11 @@
       </li>
     </ul>
 
-    <div class="copyright">
+    <div class="copyright container">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
         HTML Academy
-        <img class="copyright__icon" src="https://via.placeholder.com/27x34" alt="">
       </a>
+      <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
     </div>
   </footer>
 </body>
