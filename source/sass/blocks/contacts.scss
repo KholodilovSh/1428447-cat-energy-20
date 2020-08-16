@@ -29,12 +29,12 @@
   color: $black-1;
 
   @media (min-width: $tablet-width) {
-    width: 171px+100px;
+    // (171px+100px =271px)
+    width: 271px;
     padding-left: 71px;
     font-size: 20px;
     line-height: 21px;
   }
-
 }
 
 .contacts__address {
@@ -45,7 +45,8 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 159px+72px;
+    // (159px+72px = 231px)
+    width: 231px;
     padding-right: 72px;
     font-size: 16px;
     text-align: right;

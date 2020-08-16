@@ -12,12 +12,6 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   display: flex;
-  //   justify-content: space-between;
-    // color: $black;
   }
 
   @include obvodka(blue);

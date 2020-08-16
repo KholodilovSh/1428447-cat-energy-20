@@ -27,7 +27,6 @@
     font-size: 60px;
     line-height: 60px;
   }
-
 }
 
 .advertising__wrapper {
@@ -42,7 +41,7 @@
   justify-content: space-around;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 250px;;
+    margin-bottom: 250px;
   }
 }
 
@@ -116,7 +115,6 @@
     line-height: 20px;
     text-align: right;
   }
-
 }
 
 .advertising__before,
@@ -140,6 +138,7 @@
 
 .advertising__radio-list {
   margin: 0;
+
   @media (min-width: $tablet-width) {
     padding-top: 357px;
     padding-left: 86px;
