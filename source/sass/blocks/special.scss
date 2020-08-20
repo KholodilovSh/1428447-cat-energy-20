@@ -19,6 +19,10 @@
     line-height: 60px;
     margin-bottom: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
 }
 
 .special__list {
@@ -31,6 +35,14 @@
     column-gap: 153px;
     row-gap: 37px;
     padding-left: 30px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 94px;
+    row-gap: 37px;
+    padding-left: 110px;
     padding-bottom: 47px;
   }
 }

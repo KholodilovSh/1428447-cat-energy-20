@@ -1,20 +1,21 @@
 .main-menu {
   @include obvodka;
 
+  flex-grow: 1;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    flex-grow: 1;
     padding-top: 42px;
     padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-grow: 1;
     padding-top: 71px;
-    //padding-bottom: 14px;
-    background-color: $basic_green;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
+    &--index {
+      background-color: $basic_green;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
   }
 }
 
@@ -57,6 +58,9 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    color: $white;
+
+    main-menu--index & {
+      color: $white;
+    }
   }
 }

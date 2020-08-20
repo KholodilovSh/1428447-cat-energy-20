@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="wrapper-header">
+  <header class="wrapper-header container">
     <div class="page-header container">
       <a class="page-header__link" href="#">
         <picture>
@@ -21,7 +21,7 @@
           <!-- Выпвдающее меню -->
       </button>
     </div>
-    <section class="main-menu">
+    <section class="main-menu main-menu--index container">
       <ul class="main-menu__list">
         <li class="main-menu__item">
           <a href="#">главная</a>
@@ -99,73 +99,78 @@
       <p class="advertising__story">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <div class="advertising__wrapper">
-        <ul class="advertising__list">
-          <li class="advertising__item">
-            <p class="advertising__number">5 КГ</p>
-            <p class="advertising__aspect">снижение веса</p>
-          </li>
-          <li class="advertising__item">
-            <p class="advertising__number">60 ДНЕЙ</p>
-            <p class="advertising__aspect">затрачено времени</p>
-          </li>
-        </ul>
-        <p class="advertising__result">Затраты на питание: <br>15 000 РУБ.</p>
-      </div>
-      <div class="advertising__slider">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-          <img class="advertising__before" src="img/before-mobile@1x.png" width="311" height="232" alt="Жирный кот">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-          <img class="advertising__after visually-hidden" src="img/after-mobile@1x.png" width="251" height="240" alt="Тощий кот">
-        </picture>
-        <ul class="advertising__radio-list">
-          <li class="advertising__radiobatton">
-            <input class="advertising__radiobox visually-hidden" id="before" type="radio" name="cat" value="before" checked>
-            <label for="before">было</label>
-          </li>
-          <li class="advertising__radiobatton">
-            <input class="advertising__radiobox visually-hidden" id="after" type="radio" name="cat" value="after">
-            <label for="after">стало</label>
-          </li>
-        </ul>
+      <div class="advertising__desktop-wrapper">
+        <div class="advertising__wrapper">
+          <ul class="advertising__list">
+            <li class="advertising__item">
+              <p class="advertising__number">5 КГ</p>
+              <p class="advertising__aspect">снижение веса</p>
+            </li>
+            <li class="advertising__item">
+              <p class="advertising__number">60 ДНЕЙ</p>
+              <p class="advertising__aspect">затрачено времени</p>
+            </li>
+          </ul>
+          <p class="advertising__result">Затраты на питание: <br>15 000 РУБ.</p>
+        </div>
+        <div class="advertising__slider">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <img class="advertising__before" src="img/before-mobile@1x.png" width="311" height="232" alt="Жирный кот">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+            <img class="advertising__after visually-hidden" src="img/after-mobile@1x.png" width="251" height="240" alt="Тощий кот">
+          </picture>
+          <ul class="advertising__radio-list">
+            <li class="advertising__radiobatton">
+              <input class="advertising__radiobox visually-hidden" id="before" type="radio" name="cat" value="before" checked>
+              <label for="before">было</label>
+            </li>
+            <li class="advertising__radiobatton">
+              <input class="advertising__radiobox visually-hidden" id="after" type="radio" name="cat" value="after">
+              <label for="after">стало</label>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <section class="contacts container">
-      <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </section>
-    <section class="location container">
-      <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
-        <img class="location__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+    <div class="contacts__wrapper">
+      <section class="contacts container">
+        <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <section class="location container">
+        <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
+          <img class="location__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </a>
+      </section>
+    </div>
+    <div class="wrapper-footer container">
+      <a class="footer-logo container" href="#">
+        <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
       </a>
-    </section>
-    <a class="footer-logo container" href="#">
-      <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
-    </a>
-    <ul class="social-buttons container">
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
-      </li>
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--instagram" src="https://via.placeholder.com/16x16" alt="">
-      </li>
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--facebook" src="https://via.placeholder.com/22x22" alt="">
-      </li>
-    </ul>
-
-    <div class="copyright container">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-        HTML Academy
-      </a>
-      <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
+      <ul class="social-buttons container">
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
+        </li>
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--instagram" src="https://via.placeholder.com/16x16" alt="">
+        </li>
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--facebook" src="https://via.placeholder.com/22x22" alt="">
+        </li>
+      </ul>
+      <div class="copyright container">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy
+        </a>
+        <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
+      </div>
     </div>
   </footer>
 </body>

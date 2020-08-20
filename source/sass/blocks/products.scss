@@ -6,6 +6,16 @@
   background-color: $white;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 161px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 79px;
+    padding-bottom: 25px;
+  }
+
   @include obvodka;
 }
 
@@ -17,6 +27,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black-1;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+    margin: 0 auto;
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+
+  }
 }
 
 .products__subheader {
@@ -26,11 +45,19 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 87px;
+    margin: 0 auto;
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .products__button {
   display: block;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   padding-top: 14px;
   padding-bottom: 13px;
   font-size: 16px;
@@ -38,4 +65,8 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 38px;
+  }
 }

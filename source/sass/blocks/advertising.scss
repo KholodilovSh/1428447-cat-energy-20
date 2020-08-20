@@ -27,10 +27,23 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-top: 69px;
+    padding-bottom: 76px;
+  }
+}
+
+.advertising__desktop-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .advertising__wrapper {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
   }
@@ -70,6 +83,14 @@
     line-height: 24px;
     padding-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    padding-left: 110px;
+    padding-right: 0;
+    padding-bottom: 69px;
+  }
+
 }
 
 .advertising__aspect {
@@ -104,7 +125,7 @@
   margin: 0;
   padding-bottom: 42px;
 
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only),(min-width: $desktop-width) {
     & br {
       display: none;
     }
@@ -126,7 +147,14 @@
     top: 428px;
     left: 30px;
     width: 600px;
-    height: 620px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 680px;
+    width: 600px;
+    height: 500px;
   }
 }
 
@@ -137,10 +165,12 @@
 }
 
 .advertising__radio-list {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 357px;
+    padding-top: 358px;
     padding-left: 86px;
     padding-bottom: 64px;
   }
