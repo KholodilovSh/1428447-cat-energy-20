@@ -1,0 +1,6 @@
+.wrapper-pads {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-content: center;
+  }
+}

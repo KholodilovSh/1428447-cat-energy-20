@@ -32,7 +32,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 214px;
     padding-bottom: 73px;
-
   }
 
   &--fat,
@@ -98,7 +97,6 @@
         top: 41px;
         left: 67px;
       }
-
     }
   }
 
@@ -126,7 +124,6 @@
         top: 67px;
         left: 33px;
       }
-
     }
   }
 }
@@ -157,6 +154,7 @@
 
   &:first-of-type {
     margin-top: 22px;
+
     @media (min-width: $tablet-width) {
       margin-top: 0;
     }
@@ -164,6 +162,7 @@
 
   &:last-of-type {
     margin-bottom: 27px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 45px;
     }

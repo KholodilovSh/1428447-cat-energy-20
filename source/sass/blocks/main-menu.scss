@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
+
     &--index {
       background-color: $basic_green;
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -59,7 +60,7 @@
     font-weight: 400;
     line-height: 30px;
 
-    main-menu--index & {
+    .main-menu--index & {
       color: $white;
     }
   }

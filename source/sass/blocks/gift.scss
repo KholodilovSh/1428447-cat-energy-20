@@ -1,4 +1,6 @@
 .gift {
+  width: 280px;
+  height: 289px;
   color: $white;
   background-color: $basic-green;
   text-align: center;
@@ -6,17 +8,48 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
   @include obvodka(green);
 }
 
 .gift__img {
   padding-top: 58px;
   padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    margin-left: 0;
+  }
 }
 
 .gift__slogan {
-  margin: 0;
+  width: 161px;
+  margin: 0 auto;
   padding-bottom: 43px;
+  font-family: "Arial", serif;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-top: 71px;
+    margin-right: 124px;
+    text-align: left;
+  }
 }

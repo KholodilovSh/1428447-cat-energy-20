@@ -16,6 +16,22 @@
   }
 }
 
+.product-card__img {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-left: 42px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+    margin-left: 39px;
+    margin-bottom: 46px;
+  }
+}
+
 .product-card__table {
   @media (min-width: $tablet-width) {
     width: 252px;
@@ -53,7 +69,7 @@
     line-height: 24px;
     text-align: center;
   }
- }
+}
 
 .product-card__features {
   width: 142px;

@@ -90,7 +90,6 @@
     padding-right: 0;
     padding-bottom: 69px;
   }
-
 }
 
 .advertising__aspect {
@@ -125,7 +124,7 @@
   margin: 0;
   padding-bottom: 42px;
 
-  @media (max-width: $mobile-width-only),(min-width: $desktop-width) {
+  @media (max-width: $mobile-width-only), (min-width: $desktop-width) {
     & br {
       display: none;
     }
