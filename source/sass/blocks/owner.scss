@@ -1,7 +1,9 @@
 .owner {
-  margin-top: 26px;
+  padding-left: 19px;
+  padding-right: 20px;
   padding-top: 32px;
   padding-bottom: 27px;
+  margin-top: 26px;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -9,19 +11,71 @@
   background-color: $white;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 65px;
+    padding-bottom: 65px;
+    margin-top: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 111px;
+    padding-right: 110px;
+    padding-bottom: 69px;
+    margin-top: 65px;
+  }
+
   @include obvodka(blue);
 }
 
 .owner__header {
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 26px;
   color: $black;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.owner__ask {
+  display: flex;
+  align-items: center;
 }
 
 .owner__phone,
 .owner__email {
+  flex-grow: 1;
   padding: 13px 13px 13px 13px;
   border: 1px solid $special_grey;
   text-transform: uppercase;
+}
+
+.owner p {
+  margin: 0;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.owner label {
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }

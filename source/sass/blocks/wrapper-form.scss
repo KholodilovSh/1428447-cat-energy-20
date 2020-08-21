@@ -1,0 +1,6 @@
+.wrapper-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-content: center;
+  }
+}
