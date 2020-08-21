@@ -42,38 +42,39 @@
       программу питания для вашего кота</p>
     </div>
     <form class="form container" action="https://echo.htmlacademy.ru" method="post">
-      <div class="about-cat">
-        <fieldset>
-          <p class="about-cat__ask">
-            <label for="about-cat__name">имя:*</label>
-            <input id="about-cat__name" type="text" name="about-cat__name" value="Барсик" required>
-          </p>
-          <p class="about-cat__ask">
-            <label for="about-cat__weight">вес (кг):*</label>
-            <input id="about-cat__weight" type="text" name="about-cat__weight" value="7" required>
-          </p>
-          <p class="about-cat__ask">
-            <label for="about-cat__years">возраст (лет):</label>
-            <input id="about-cat__years" type="text" name="about-cat__years" value="7" required>
-          </p>
-        </fieldset>
+      <div class="wrapper-form1">
+        <div class="about-cat">
+          <fieldset>
+            <p class="about-cat__ask">
+              <label for="about-cat__name">имя:*</label>
+              <input id="about-cat__name" type="text" name="about-cat__name" value="Барсик" required>
+            </p>
+            <p class="about-cat__ask">
+              <label for="about-cat__weight">вес (кг):*</label>
+              <input id="about-cat__weight" type="text" name="about-cat__weight" value="7" required>
+            </p>
+            <p class="about-cat__ask">
+              <label for="about-cat__years">возраст (лет):</label>
+              <input id="about-cat__years" type="text" name="about-cat__years" value="7" required>
+            </p>
+          </fieldset>
+        </div>
+
+        <ul class="radio-buttons">
+          <li class="radio-buttons__item">
+            <input class="radio-buttons_input" id="thinner" type="radio" name="program" value="thinner" checked>
+            <label for="thinner">похудение</label>
+          </li>
+          <li class="radio-buttons__item">
+            <input class="radio-buttons_input" id="fatter" type="radio" name="program" value="fatter">
+            <label for="fatter">Набор массы</label>
+          </li>
+          <li class="radio-buttons__item">
+            <input class="radio-buttons_input" id="advice" type="radio" name="program" value="advice">
+            <label for="advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
       </div>
-
-      <ul class="radio-buttons">
-        <li class="radio-buttons__item">
-          <input class="radio-buttons_input" id="thinner" type="radio" name="program" value="thinner" checked>
-          <label for="thinner">похудение</label>
-        </li>
-        <li class="radio-buttons__item">
-          <input class="radio-buttons_input" id="fatter" type="radio" name="program" value="fatter">
-          <label for="fatter">Набор массы</label>
-        </li>
-        <li class="radio-buttons__item">
-          <input class="radio-buttons_input" id="advice" type="radio" name="program" value="advice">
-          <label for="advice">Не знаю (Нужен ваш совет)</label>
-        </li>
-      </ul>
-
       <fieldset class="owner">
         <legend class="owner__header">Контактные данные (владельца кота)</legend>
         <p class="owner__ask">
