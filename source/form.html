@@ -7,16 +7,20 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="page-header">
-      <a class="page-header__link" href="index.html">
-        <img class="page-header__icon" src="img/logo-mobile.svg" width="196" height="37" alt="">
+  <header class="wrapper-header container">
+    <div class="page-header container">
+      <a class="page-header__link" href="#">
+        <picture>
+          <source media="(min-width: 868px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="page-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
+        </picture>
       </a>
       <button class="page-header__button .page-header__button--hidden" type="button">
           <!-- Выпвдающее меню -->
       </button>
     </div>
-    <section class="main-menu visually-hidden">
+    <section class="main-menu container">
       <ul class="main-menu__list">
         <li class="main-menu__item">
           <a href="index.html">главная</a>
@@ -32,54 +36,60 @@
   </header>
 
   <main>
-    <h1  class="main-header">Подбор программы</h1>
-    <p class="subheader">Заполните анкету, и мы подберем
+    <div  class="container">
+      <h1  class="main-header main-header--form">Подбор программы</h1>
+      <p class="subheader container">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
+    </div>
+    <form class="form container" action="https://echo.htmlacademy.ru" method="post">
+      <div class="wrapper-form1">
+        <div class="about-cat">
+          <fieldset>
+            <p class="about-cat__ask">
+              <label for="about-cat__name">имя:*</label>
+              <input id="about-cat__name" type="text" name="about-cat__name" value="Барсик" required>
+            </p>
+            <p class="about-cat__ask">
+              <label for="about-cat__weight">вес (кг):*</label>
+              <input id="about-cat__weight" type="text" name="about-cat__weight" value="7" required>
+            </p>
+            <p class="about-cat__ask">
+              <label for="about-cat__years">возраст (лет):</label>
+              <input id="about-cat__years" type="text" name="about-cat__years" value="7" required>
+            </p>
+          </fieldset>
+        </div>
 
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="about-cat">
-        <fieldset>
-          <p>
-            <label for="form__name">имя:*</label>
-            <input id="form__name" type="text" name="form__name" value="Барсик" required>
-          </p>
-          <p>
-            <label for="form__weight">вес (кг):*</label>
-            <input id="form__weight" type="text" name="form__weight" value="7" required>
-          </p>
-          <p>
-            <label for="form__years">возраст (лет):</label>
-            <input id="form__years" type="text" name="form__years" value="7" required>
-          </p>
-        </fieldset>
+        <ul class="radio-buttons">
+          <li class="radio-buttons__item">
+            <input class="radio-buttons_input" id="thinner" type="radio" name="program" value="thinner" checked>
+            <label for="thinner">похудение</label>
+          </li>
+          <li class="radio-buttons__item">
+            <input class="radio-buttons_input" id="fatter" type="radio" name="program" value="fatter">
+            <label for="fatter">Набор массы</label>
+          </li>
+          <li class="radio-buttons__item">
+            <input class="radio-buttons_input" id="advice" type="radio" name="program" value="advice">
+            <label for="advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
       </div>
-
-      <ul class="radio-buttons">
-        <li class="radio-buttons__item">
-          <input class="radio-buttons_input" id="thinner" type="radio" name="program" value="thinner" checked>
-          <label for="thinner">похудение</label>
-        </li>
-        <li class="radio-buttons__item">
-          <input class="radio-buttons_input" id="fatter" type="radio" name="program" value="fatter">
-          <label for="fatter">Набор массы</label>
-        </li>
-        <li class="radio-buttons__item">
-          <input class="radio-buttons_input" id="advice" type="radio" name="program" value="advice">
-          <label for="advice">Не знаю (Нужен ваш совет)</label>
-        </li>
-      </ul>
-
       <fieldset class="owner">
         <legend class="owner__header">Контактные данные (владельца кота)</legend>
-        <label for="owner__email">email:*</label>
-        <input  class="owner__email" id="owner__email" type="email" name="owner__email" value="kuklachev@gmail.com" required>
-        <label for="owner__phone">телефон:*</label>
-        <input class="owner__phone" id="owner__phone" type="tel" name="owner__phone" value="8 (960) 900-60-90" required>
+        <p class="owner__ask">
+          <label for="owner__email">email:*</label>
+          <input  class="owner__email" id="owner__email" type="email" name="owner__email" value="kuklachev@gmail.com" required>
+        </p>
+        <p class="owner__ask">
+          <label for="owner__phone">телефон:*</label>
+          <input class="owner__phone" id="owner__phone" type="tel" name="owner__phone" value="8 (960) 900-60-90" required>
+        </p>
       </fieldset>
 
       <fieldset class="comments">
         <legend class="comments__header">Комментарий:</legend>
-        <textarea class="comments__text" id="comments" name="comments" rows="5" cols="60" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="comments__text" id="comments" name="comments" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="append">
@@ -103,41 +113,47 @@
           </li>
         </ul>
       </fieldset>
-
-      <button class="form__submit" type="submit">отправить заявку</button>
-      <p class="form__hint">* — Обязательные поля</p>
+      <div class="wrapper-form">
+        <button class="form__submit" type="submit">отправить заявку</button>
+        <p class="form__hint">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
 
 
-  <footer class="footer-mobile">
-    <section class="contacts">
-      <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </section>
-    <section class="location">
-      <img src="https://via.placeholder.com/320x362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-    </section>
-    <a class="footer-logo" href="index.html">
-      <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
-    </a>
-    <ul class="social-buttons">
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
-      </li>
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--instagram" src="https://via.placeholder.com/16x16" alt="">
-      </li>
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--facebook" src="https://via.placeholder.com/22x22" alt="">
-      </li>
-    </ul>
-
-    <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-        HTML Academy
-        <img class="copyright__icon" src="https://via.placeholder.com/27x34" alt="">
+  <footer>
+    <div class="contacts__wrapper">
+      <section class="contacts container">
+        <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <section class="location container">
+        <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
+          <img class="location__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </a>
+      </section>
+    </div>
+    <div class="wrapper-footer container">
+      <a class="footer-logo container" href="#">
+        <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
       </a>
+      <ul class="social-buttons container">
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
+        </li>
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--instagram" src="https://via.placeholder.com/16x16" alt="">
+        </li>
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--facebook" src="https://via.placeholder.com/22x22" alt="">
+        </li>
+      </ul>
+      <div class="copyright container">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy
+        </a>
+        <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
+      </div>
     </div>
   </footer>
 </body>

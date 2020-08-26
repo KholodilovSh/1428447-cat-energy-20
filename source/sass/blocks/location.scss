@@ -1,0 +1,10 @@
+.location {
+  @include obvodka;
+}
+
+.location__map {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+}

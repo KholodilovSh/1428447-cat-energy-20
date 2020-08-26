@@ -1,0 +1,126 @@
+.promo {
+  position: relative;
+  text-align: left;
+
+  @media (max-width: $mobile-width-only) {
+    color: $white;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+
+  @include obvodka(blue);
+}
+
+.promo__header {
+  margin: 0;
+  font-weight: normal;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 27px 0 25px 0;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 62px 0 41px 117px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding-top: 111px;
+    padding-left: 190px;
+    padding-bottom: 40px;
+    z-index: 30;
+  }
+}
+
+.promo__slogan {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 29px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 118px;
+    margin-bottom: 49px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    margin-bottom: 52px;
+  }
+}
+
+.promo__glass {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 263px;
+    left: 29px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    left: 558px;
+    width: 552px;
+    height: 499px;
+    z-index: 3;
+  }
+}
+
+.promo__programm {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: $basic-green;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 112px;
+    margin-bottom: 526px;
+    color: $white;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    margin-bottom: 267px;
+  }
+}
