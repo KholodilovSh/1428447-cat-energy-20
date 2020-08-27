@@ -8,28 +8,28 @@
 </head>
 
 <body>
-  <header class="wrapper-header container">
-    <div class="page-header container">
-      <a class="page-header__link" href="#">
+  <header class="common-header container  common-header--opened common-header--nojs">
+    <div class="common-header__wrapper container">
+      <a class="common-header__link" href="#">
         <picture>
-          <source media="(min-width: 868px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img class="page-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
+          <img class="common-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
         </picture>
       </a>
-      <button class="page-header__button .page-header__button--hidden" type="button">
-          <!-- Выпвдающее меню -->
+      <button class="common-header__button" type="button">
+          <span class="visually-hidden">Управление меню</span>
       </button>
     </div>
-    <section class="main-menu container">
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
+    <section class="common-header__menu container">
+      <ul class="common-header__list">
+        <li class="common-header__item">
           <a href="index.html">главная</a>
         </li>
-        <li class="main-menu__item">
+        <li class="common-header__item">
           <a href="#">каталог продукции</a>
         </li>
-        <li class="main-menu__item">
+        <li class="common-header__item">
           <a href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -44,7 +44,11 @@
       <ul class="main-catalog__list">
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/chicken-small-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy PRO <br>500 г</h3>
               <table class="product-card__features">
@@ -69,7 +73,12 @@
         </li>
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/chicken-big-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
+
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy PRO <br>1000 г</h3>
               <table class="product-card__features">
@@ -94,7 +103,12 @@
         </li>
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/fish-small-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
+
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy PRO <br>500 г</h3>
               <table class="product-card__features">
@@ -119,7 +133,11 @@
         </li>
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/fish-big-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy PRO <br>1000 г</h3>
               <table class="product-card__features">
@@ -144,7 +162,11 @@
         </li>
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy slim <br>500 г</h3>
               <table class="product-card__features">
@@ -169,7 +191,11 @@
         </li>
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy slim <br>1000 г</h3>
               <table class="product-card__features">
@@ -194,7 +220,11 @@
         </li>
         <li class="product-card">
           <div class="product-card__wrapper">
-            <img class="product-card__img" src="https://via.placeholder.com/140x112" alt="">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png" width="172" height="196">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png" width="168" height="200">
+              <img class="product-card__img" src="img/rice-small-mobile@1x.jpg" width="140" height="112" alt="Еда для котика">
+            </picture>
             <div class="product-card__table">
               <h3 class="product-card__name">Cat Energy slim <br>500 г</h3>
               <table class="product-card__features">
@@ -227,32 +257,34 @@
     <div class="wrapper-pads">
       <section class="pad-products container">
         <h2 class="pad-products__header">Дополнительные товары</h2>
-        <ul class="pad-products__list">
-          <li class="pad-products__item">
-            <p class="pad-products__name">Сахарозаменитель</p>
-            <p class="pad-products__unit">1 упаковка (100 г)</p>
-            <p class="pad-products__price">200 Р.</p>
-            <button class="pad-products__button" type="button">заказать</button>
-          </li>
-          <li class="pad-products__item">
-            <p class="pad-products__name">питьевая вода</p>
-            <p class="pad-products__unit">5 литров</p>
-            <p class="pad-products__price">50 Р.</p>
-            <button class="pad-products__button" type="button">заказать</button>
-          </li>
-          <li class="pad-products__item">
-            <p class="pad-products__name">молоко</p>
-            <p class="pad-products__unit">1 литр</p>
-            <p class="pad-products__price">100 Р.</p>
-            <button class="pad-products__button" type="button">заказать</button>
-          </li>
-          <li class="pad-products__item">
-            <p class="pad-products__name">витамины</p>
-            <p class="pad-products__unit">1 упаковка (30 г)</p>
-            <p class="pad-products__price">300 Р.</p>
-            <button class="pad-products__button" type="button">заказать</button>
-          </li>
-        </ul>
+        <div class="pad-products__container">
+          <ul class="pad-products__list">
+            <li class="pad-products__item">
+              <p class="pad-products__name">Сахарозаменитель</p>
+              <p class="pad-products__unit">1 упаковка (100 г)</p>
+              <p class="pad-products__price">200 Р.</p>
+              <button class="pad-products__button" type="button">заказать</button>
+            </li>
+            <li class="pad-products__item">
+              <p class="pad-products__name">питьевая вода</p>
+              <p class="pad-products__unit">5 литров</p>
+              <p class="pad-products__price">50 Р.</p>
+              <button class="pad-products__button" type="button">заказать</button>
+            </li>
+            <li class="pad-products__item">
+              <p class="pad-products__name">молоко</p>
+              <p class="pad-products__unit">1 литр</p>
+              <p class="pad-products__price">100 Р.</p>
+              <button class="pad-products__button" type="button">заказать</button>
+            </li>
+            <li class="pad-products__item">
+              <p class="pad-products__name">витамины</p>
+              <p class="pad-products__unit">1 упаковка (30 г)</p>
+              <p class="pad-products__price">300 Р.</p>
+              <button class="pad-products__button" type="button">заказать</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="gift container">
@@ -263,32 +295,32 @@
   </main>
   <footer>
     <div class="contacts__wrapper">
-      <section class="contacts container">
+      <section class="contacts  contacts--catalog">
         <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
       </section>
-      <section class="location container">
+      <section class="location">
         <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
           <img class="location__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </a>
       </section>
     </div>
-    <div class="wrapper-footer container">
-      <a class="footer-logo container" href="#">
+    <div class="wrapper-footer">
+      <a class="footer-logo" href="#">
         <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
       </a>
-      <ul class="social-buttons container">
+      <ul class="social-buttons">
         <li class="social-buttons__item">
-          <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
+          <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="img/icon-vk.svg" width="23" height="16" alt="">
         </li>
         <li class="social-buttons__item">
-          <img  class="social-buttons__icon social-buttons__icon--instagram" src="https://via.placeholder.com/16x16" alt="">
+          <img  class="social-buttons__icon social-buttons__icon--instagram" width="16" height="16" src="img/icon-insta.svg" alt="">
         </li>
         <li class="social-buttons__item">
-          <img  class="social-buttons__icon social-buttons__icon--facebook" src="https://via.placeholder.com/22x22" alt="">
+          <img  class="social-buttons__icon social-buttons__icon--facebook" width="22" height="22" src="img/icon-fb.svg" alt="">
         </li>
       </ul>
-      <div class="copyright container">
+      <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML Academy
         </a>
@@ -296,5 +328,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/menu-toggle.js"></script>
 </body>
 </html>

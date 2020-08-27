@@ -4,11 +4,11 @@
   background-color: $white;
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
     margin-bottom: 71px;
   }
-
-  @include obvodka;
 }
 
 .programs__header {
@@ -39,13 +39,13 @@
     &::after {
       content: "";
       position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 21px;
       border-radius: 50%;
       background-color: $basic-green;
 
       @media (max-width: $mobile-width-only) {
-        width: 50px;
-        height: 50px;
-        top: 21px;
         left: 22px;
       }
 
@@ -75,12 +75,12 @@
 
   &--fat {
     &::before {
+      width: 50px;
+      height: 53px;
+      top: 21px;
       background-image: url("../../img/icon-cat-slim.svg");
 
       @media (max-width: $mobile-width-only) {
-        width: 50px;
-        height: 53px;
-        top: 21px;
         left: 22px;
       }
 
@@ -102,12 +102,12 @@
 
   &--slim {
     &::before {
+      width: 67px;
+      height: 50px;
+      top: 29px;
       background-image: url("../../img/icon-cat-pro.svg");
 
       @media (max-width: $mobile-width-only) {
-        width: 67px;
-        height: 50px;
-        top: 29px;
         left: 13px;
       }
 
@@ -134,22 +134,16 @@
   padding-bottom: 18px;
   margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 53px;
     margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 55px;
-    margin-bottom: 45px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin: 0;
   }
 
   &:first-of-type {
@@ -166,22 +160,31 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 45px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .programs__text {
-  padding-left: 20px;
-  padding-bottom: 38px;
-  margin: 0;
+  position: relative;
+  padding-bottom: 23px;
+  margin: 0 20px 15px 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
 
+  @media (max-width: $mobile-width-only ) {
+    border-bottom: 1px solid $grey-4;
+  }
+
   @media (min-width: $tablet-width) {
     width: 377px;
     padding-left: 52px;
     padding-bottom: 48px;
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -190,9 +193,53 @@
     width: 467px;
     padding-bottom: 23px;
   }
+
+  // формируем острие стрелки
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 115px;
+    width: 7px;
+    height: 5px;
+    background-color: $black;
+  }
+
+  &::before {
+    bottom: -26px;
+    background-image: linear-gradient(to top right, $black 50%, $basic-grey 50%);
+  }
+
+  &::after {
+    bottom: -31px;
+    background-image: linear-gradient(to bottom right, black 50%, $basic-grey 50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after,
+    &::before {
+      left: 202px;
+    }
+
+    &::before {
+      bottom: -16px;
+    }
+
+    &::after {
+      bottom: -21px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after,
+    &::before {
+      left: 205px;
+    }
+  }
 }
 
 .programs__decision {
+  position: relative;
   padding-left: 19px;
   font-size: 16px;
   line-height: 16px;
@@ -204,22 +251,22 @@
     line-height: 30px;
   }
 
+  // формирование горизонтальной линии стрелки
   &::after {
     content: "";
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     left: 119px;
-    width: 32px;
+    width: 17px;
     height: 2px;
     background-color: $black;
 
     @media (min-width: $tablet-width) {
-      bottom: 66px;
+      bottom: 13px;
       left: 185px;
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 69px;
       left: 188px;
     }
   }

@@ -5,7 +5,13 @@
   list-style-type: none;
   background-color: $basic-grey;
 
-  @include obvodka(green);
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    background-image:
+    linear-gradient( to bottom,$white 20%, $basic-grey 20%);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }
 
 .product-card__wrapper {
@@ -17,17 +23,19 @@
 }
 
 .product-card__img {
+  width: auto;
+  margin-left: 6.5vw;
+  min-height: 112px;
+
   @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
-    margin-left: 42px;
+    display: block;
+    margin: 0 auto;
+    min-height: 200px;
     margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 196px;
-    margin-left: 39px;
+    min-height: 196px;
     margin-bottom: 46px;
   }
 }
@@ -96,7 +104,7 @@
   display: block;
   padding-top: 13px;
   padding-bottom: 14px;
-  margin: 13px 20px 14px 20px;
+  margin: 13px 6.5% 14px 6.5%;
   text-align: center;
   font-size: 16px;
   line-height: 16px;
@@ -108,5 +116,9 @@
     margin: 33px 37px 40px 39px;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }

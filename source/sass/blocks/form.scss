@@ -8,16 +8,12 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 82px;
   }
-
-  @include obvodka(black);
 }
 
 .form__submit {
-  width: 280px;
+  width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 21px;
   font-size: 16px;
   line-height: 20px;
@@ -32,7 +28,7 @@
     width: 282px;
     padding-top: 13px;
     padding-bottom: 13px;
-    margin-left: 71px;
+    margin-left: 51px;
     margin-right: 61px;
     margin-bottom: 0;
     font-size: 20px;
@@ -41,6 +37,7 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    margin-left: 0;
   }
 }
 

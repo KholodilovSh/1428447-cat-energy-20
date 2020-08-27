@@ -1,24 +1,24 @@
 .comments {
+  padding-left: 0;
   padding-top: 34px;
   padding-bottom: 27px;
   font-weight: normal;
   background-color: $white;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    padding-left: 71px;
+    padding-left: 51px;
     padding-right: 65px;
     padding-bottom: 65px;
     margin-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 111px;
+    padding-left: 0;
     padding-right: 110px;
     padding-bottom: 69px;
-    margin-top: 65px;
+    margin-top: 0;
   }
-
-  @include obvodka(purple);
 }
 
 .comments__header {

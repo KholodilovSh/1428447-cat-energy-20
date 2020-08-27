@@ -4,27 +4,45 @@
   color: $black;
   background-color: $white;
 
-  @include obvodka(red);
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
+  }
 }
 
 .pad-products__header {
   margin: 0;
-  padding-left: 19px;
   padding-bottom: 35px;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 67px;
+    padding-left: 39px;
     padding-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding-left: 8.1vw;
     padding-bottom: 81px;
+  }
+}
+
+.pad-products__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 39px;
+    margin-bottom: 60px;
+    border: 1px solid $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 8.1vw;
+    border: none;
   }
 }
 
@@ -38,23 +56,28 @@
   grid-template-areas: "one one"
     "two three"
     "four four";
-  width: 280px;
   padding-top: 13px;
   padding-bottom: 19px;
-  margin: 0 auto;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "one two three"
       "four four four";
-    width: 708px;
-  }
+    padding-top: 26px;
+    padding-bottom: 28px;
+}
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    width: 896px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $special-grey;
+
+    &:first-of-type {
+      border-top: 1px solid $special-grey;
+    }
   }
 }
 
@@ -68,12 +91,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 38px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 0;
     font-size: 20px;
     line-height: 20px;
   }
@@ -87,6 +110,9 @@
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .pad-products__unit {
@@ -100,7 +126,7 @@
 .pad-products__button {
   grid-area: four;
   padding: 13px 0;
-  width: 100%;
+  width: auto;
   font-size: 16px;
   line-height: 16px;
   color: $white;
@@ -109,8 +135,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 633px;
-    margin: 0 38px;
+    // width: 633px;
+    // margin: 0 38px;
   }
 
   @media (min-width: $desktop-width) {

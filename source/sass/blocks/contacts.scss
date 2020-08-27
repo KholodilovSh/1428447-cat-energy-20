@@ -1,7 +1,5 @@
 .contacts {
   display: flex;
-  // justify-content: space-around;
-  align-content: top;
   font-weight: normal;
   background-color: $white;
   padding-top: 28px;
@@ -21,11 +19,10 @@
     z-index: 1;
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     background-color: $basic-grey;
   }
-
-  @include obvodka(blue);
 }
 
 .contacts__wrapper {
@@ -33,7 +30,6 @@
     position: relative;
   }
 }
-
 
 .contacts__welcome {
   padding-left: 19px;
@@ -53,6 +49,7 @@
 }
 
 .contacts__address {
+  padding-right: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;

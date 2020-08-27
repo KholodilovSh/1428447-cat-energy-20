@@ -9,20 +9,20 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    width: 50%;
   }
-
-  @include obvodka(yellow);
 }
 
 .about-cat fieldset {
-  padding: 0 19px;
+  padding: 0;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0 71px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 111px;
+    padding: 0;
   }
 }
 

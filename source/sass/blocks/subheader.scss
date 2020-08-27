@@ -10,19 +10,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    // 323px + 70px(= padding-left) = 393px
-    width: 393px;
-    padding-left: 70px;
+    // 323px + 50px(= padding-left) = 373px
+    width: 373px;
+    padding-left: 50px;
     padding-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    // 323px + 110px(= padding-left) = 433px
-    width: 433px;
-    padding-left: 110px;
+    width: 323px;
+    padding-left: 0;
   }
-
-  @include obvodka;
 }

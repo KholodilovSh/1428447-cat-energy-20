@@ -1,32 +1,28 @@
 .promo {
   position: relative;
-  text-align: left;
+  color: $white;
+  text-align: center;
 
-  @media (max-width: $mobile-width-only) {
-    color: $white;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+  @media (max-width: $mobile-width-only ) {
+    background-image:
+      url("../img/index-background-mobile@1x.jpg"),
+      linear-gradient( to bottom,$basic-green-2 65%, $white 35%);
     background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
+    background-position: top center;
   }
 
   @media (min-width: $tablet-width) {
     color: $black;
+    text-align: left;
   }
-
-  @include obvodka(blue);
 }
 
 .promo__header {
+  padding: 27px 0 25px 0;
   margin: 0;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: normal;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 27px 0 25px 0;
-    background-color: $basic-green;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -45,17 +41,12 @@
 }
 
 .promo__slogan {
-  text-transform: uppercase;
-  margin: 0;
   padding: 0;
+  margin: 0 0 29px 0;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: normal;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 29px;
-    background-color: $basic-green;
-  }
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -102,11 +93,6 @@
   padding-top: 7px;
   padding-bottom: 7px;
   background-color: $basic-green;
-
-  @media (max-width: $mobile-width-only) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
   @media (min-width: $tablet-width) {
     width: 244px;

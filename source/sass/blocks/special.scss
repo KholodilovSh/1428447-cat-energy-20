@@ -2,26 +2,18 @@
   font-weight: normal;
   color: $black;
   background-color: $white;
-
-  @include obvodka(blue);
 }
 
 .special__header {
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
-  padding-left: 20px;
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
   }
 }
 
@@ -34,25 +26,94 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 153px;
     row-gap: 37px;
-    padding-left: 30px;
     padding-bottom: 47px;
+    counter-reset: number 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 94px;
     row-gap: 37px;
-    padding-left: 110px;
     padding-bottom: 47px;
   }
 }
 
 .special__item {
+  position: relative;
+  padding-left: 80px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  min-height: 60px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
   list-style-type: none;
-  margin-left: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    height: 280px;
+    margin: 0;
+    padding-top: 151px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    counter-increment: number;
+    // background-color: transparentize(#fff,0.5);
+    &::after {
+      content: counter(number);
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 0;
+      left: 98px;
+      font-family: "Oswald","Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      // z-index: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  &--leaf::before,
+  &--powder::before,
+  &--dining::before,
+  &--clock::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $basic_green;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--dining::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--clock::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
 }

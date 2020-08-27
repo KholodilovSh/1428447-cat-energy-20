@@ -5,7 +5,15 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+      background-image:
+        linear-gradient( to bottom,$white 55%, $grey-3 55%);
+      background-repeat: no-repeat;
+      background-position: top center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient( to bottom,$white 25%, $grey-3 25%);
   }
 
   @include obvodka;
@@ -13,7 +21,6 @@
 
 .advertising__header {
   margin: 0;
-  padding-left: 20px;
   padding-top: 27px;
   padding-bottom: 33px;
   font-size: 36px;
@@ -21,7 +28,6 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
     padding-top: 43px;
     padding-bottom: 63px;
     font-size: 60px;
@@ -29,7 +35,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
     padding-top: 69px;
     padding-bottom: 76px;
   }
@@ -56,6 +61,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 250px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .advertising__item {
@@ -69,7 +78,6 @@
 }
 
 .advertising__story {
-  padding-left: 20px;
   padding-right: 21px;
   font-size: 14px;
   line-height: 18px;
@@ -77,8 +85,7 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 60px;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 54px;
@@ -86,7 +93,6 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    padding-left: 110px;
     padding-right: 0;
     padding-bottom: 69px;
   }
@@ -157,12 +163,6 @@
   }
 }
 
-.advertising__slider {
-  @media (min-width: $tablet-width) {
-    background-color: $grey-3;
-  }
-}
-
 .advertising__radio-list {
   display: flex;
   justify-content: space-around;
@@ -172,6 +172,10 @@
     padding-top: 358px;
     padding-left: 86px;
     padding-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
   }
 }
 
