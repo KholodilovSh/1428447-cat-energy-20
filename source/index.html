@@ -8,24 +8,28 @@
 </head>
 
 <body>
-  <header>
-    <div class="page-header">
-      <a class="page-header__link" href="#">
-        <img class="page-header__icon" src="img/logo-mobile.svg" width="196" height="37" alt="">
+  <header class="common-header container  common-header--opened common-header--nojs">
+    <div class="common-header__wrapper">
+      <a class="common-header__link" href="#">
+        <picture>
+          <source media="(min-width: 868px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="common-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
+        </picture>
       </a>
-      <button class="page-header__button .page-header__button--hidden" type="button">
-          <!-- Выпвдающее меню -->
+      <button class="common-header__button" type="button">
+          <span class="visually-hidden">Управление меню</span>
       </button>
     </div>
-    <section class="main-menu">
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
+    <section class="common-header__menu common-header--index container">
+      <ul class="common-header__list">
+        <li class="common-header__item">
           <a href="#">главная</a>
         </li>
-        <li class="main-menu__item">
+        <li class="common-header__item">
           <a href="catalog.html">каталог продукции</a>
         </li>
-        <li class="main-menu__item">
+        <li class="common-header__item">
           <a href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -34,18 +38,24 @@
   <main>
     <h1 class="visually-hidden">cat energy</h1>
     <section class="promo">
-      <h2 class="promo__header">Функциональное питание для котов</h2>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__glass" src="https://via.placeholder.com/280x270" alt="Стакан">
-      <a class="promo__programm" href="#">
-        подобрать программу
-      </a>
+      <div class="container">
+        <h2 class="promo__header">Функциональное<br> питание для котов</h2>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png" width="552" height="499" >
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg" width="709" height="609">
+          <img class="promo__glass" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Стакан">
+        </picture>
+        <a class="promo__programm" href="#">
+          подобрать программу
+        </a>
+      </div>
     </section>
 
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">рекомендуемые программы</h2>
       <div class="programs__article">
-        <h3 class="programs__header">
+        <h3 class="programs__header programs__header--fat">
           Похудение
         </h3>
         <p class="programs__text">
@@ -56,7 +66,7 @@
         </a>
       </div>
       <div class="programs__article">
-        <h3 class="programs__header">
+        <h3 class="programs__header programs__header--slim">
           Набор массы
         </h3>
         <p class="programs__text">
@@ -68,85 +78,105 @@
       </div>
     </section>
 
-    <section class="special">
+    <section class="special container">
       <h2 class="special__header">Как это работает</h2>
       <ul class="special__list">
-        <li class="special__item">
+        <li class="special__item special__item--leaf">
           Функциональное питание содержит только полезные питательные вещества.
         </li>
-        <li class="special__item">
+        <li class="special__item special__item--powder">
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </li>
-        <li class="special__item">
+        <li class="special__item special__item--dining">
           Замените один-два приема обычной еды на наше функциональное питание.
         </li>
-        <li class="special__item">
+        <li class="special__item special__item--clock">
           Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
       </ul>
     </section>
 
     <section class="advertising">
-      <h2 class="advertising__header">Живой пример</h2>
-      <p class="advertising__story">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <ul class="advertising__list">
-        <li class="advertising__item">
-          <p class="advertising__number">5 КГ</p>
-          <p class="advertising__aspect">снижение веса</p>
-        </li>
-        <li class="advertising__item">
-          <p class="advertising__number">60 ДНЕЙ</p>
-          <p class="advertising__aspect">затрачено времени</p>
-        </li>
-        <p class="advertising__result">Затраты на питание: 15 000 РУБ.</p>
-      </ul>
-      <div class="advertising__slider">
-        <img class="advertising__before" src="https://via.placeholder.com/311x232" alt="Жирный кот">
-        <img class="advertising__after visually-hidden" src="https://via.placeholder.com/251x240" alt="Тощий кот">
-        <ul class="advertising__radio-list">
-          <li class="advertising__radiobatton">
-            <input class="advertising__radiobox visually-hidden" id="before" type="radio" name="cat" value="before" checked>
-            <label for="before">было</label>
-          </li>
-          <li class="advertising__radiobatton">
-            <input class="advertising__radiobox visually-hidden" id="after" type="radio" name="cat" value="after">
-            <label for="after">стало</label>
-          </li>
-        </ul>
+      <div class="container">
+        <h2 class="advertising__header">Живой пример</h2>
+        <p class="advertising__story">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="advertising__desktop-wrapper">
+          <div class="advertising__wrapper">
+            <ul class="advertising__list">
+              <li class="advertising__item">
+                <p class="advertising__number">5 КГ</p>
+                <p class="advertising__aspect">снижение веса</p>
+              </li>
+              <li class="advertising__item">
+                <p class="advertising__number">60 ДНЕЙ</p>
+                <p class="advertising__aspect">затрачено времени</p>
+              </li>
+            </ul>
+            <p class="advertising__result">Затраты на питание: <br>15 000 РУБ.</p>
+          </div>
+          <div class="advertising__slider">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+              <img class="advertising__before" src="img/before-mobile@1x.png" width="311" height="232" alt="Жирный кот">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+              <img class="advertising__after visually-hidden" src="img/after-mobile@1x.png" width="251" height="240" alt="Тощий кот">
+            </picture>
+            <ul class="advertising__radio-list">
+              <li class="advertising__radiobatton">
+                <input class="advertising__radiobox visually-hidden" id="before" type="radio" name="cat" value="before" checked>
+                <label for="before">было</label>
+              </li>
+              <li class="advertising__radiobatton">
+                <input class="advertising__radiobox visually-hidden" id="after" type="radio" name="cat" value="after">
+                <label for="after">стало</label>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <section class="contacts">
-      <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    </section>
-    <section class="location">
-      <img src="https://via.placeholder.com/320x362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-    </section>
-    <a class="footer-logo" href="#">
-      <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
-    </a>
-    <ul class="social-buttons">
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="https://via.placeholder.com/23x16" alt="">
-      </li>
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--instagram" src="https://via.placeholder.com/16x16" alt="">
-      </li>
-      <li class="social-buttons__item">
-        <img  class="social-buttons__icon social-buttons__icon--facebook" src="https://via.placeholder.com/22x22" alt="">
-      </li>
-    </ul>
-
-    <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-        HTML Academy
-        <img class="copyright__icon" src="https://via.placeholder.com/27x34" alt="">
+    <div class="contacts__wrapper">
+      <section class="contacts">
+        <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <section class="location">
+        <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
+          <img class="location__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </a>
+      </section>
+    </div>
+    <div class="wrapper-footer">
+      <a class="footer-logo" href="#">
+        <img class="footer-logo__img" src="img/logo-footer.svg" width="196" height="37" alt="">
       </a>
+      <ul class="social-buttons">
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--vkontakte" src="img/icon-vk.svg" width="23" height="16" alt="">
+        </li>
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--instagram" width="16" height="16" src="img/icon-insta.svg" alt="">
+        </li>
+        <li class="social-buttons__item">
+          <img  class="social-buttons__icon social-buttons__icon--facebook" width="22" height="22" src="img/icon-fb.svg" alt="">
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy
+        </a>
+        <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
+      </div>
     </div>
   </footer>
+  <script src="js/menu-toggle.js"></script>
 </body>
 </html>
