@@ -50,6 +50,7 @@
   color: $special_dark-grey;
   list-style-type: none;
   margin-bottom: 20px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 246px;
@@ -72,6 +73,7 @@
       font-size: 280px;
       line-height: 280px;
       color: $basic-grey;
+      z-index: -1;
     }
   }
 

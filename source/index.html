@@ -6,13 +6,13 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-  <header class="common-header container  common-header--opened common-header--nojs">
-    <div class="common-header__wrapper">
+  <header class="common-header common-header--opened common-header--nojs">
+    <!-- Класс для открытого меню  common-header--opened -->
+    <div class="common-header__wrapper container">
       <a class="common-header__link" href="#">
         <picture>
-          <source media="(min-width: 868px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
           <img class="common-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
         </picture>
@@ -21,7 +21,7 @@
           <span class="visually-hidden">Управление меню</span>
       </button>
     </div>
-    <section class="common-header__menu common-header--index container">
+    <section class="common-header__menu common-header--index">
       <ul class="common-header__list">
         <li class="common-header__item">
           <a href="#">главная</a>
@@ -146,7 +146,8 @@
     <div class="contacts__wrapper">
       <section class="contacts">
         <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
+          <span class="contacts__spb">Санкт&#8209;Петербург</span></address>
       </section>
       <section class="location">
         <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
