@@ -41,22 +41,25 @@
 .advertising__desktop-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .advertising__wrapper {
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .advertising__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-left: 0;
     margin-bottom: 250px;
   }
 
@@ -67,6 +70,10 @@
 
 .advertising__item {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+  }
 }
 
 .advertising__story,
@@ -97,26 +104,42 @@
 }
 
 .advertising__aspect {
+  margin: -8px 0 0 27px;
   font-size: 12px;
   line-height: 12px;
-  margin: 0;
+  width: 70px;
+  text-align: center;
+  background-color: $grey-3;
 
   @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 14px;
     line-height: 14px;
+    width: 130px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-3;
   }
 }
 
 .advertising__number {
-  font-size: 24px;
-  line-height: 24px;
-  margin: 0;
   padding-top: 14px;
   padding-bottom: 17px;
+  margin: 0;
+  width: 124px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
   }
 }
 
@@ -138,6 +161,10 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
