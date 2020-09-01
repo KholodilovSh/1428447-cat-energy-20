@@ -1,0 +1,67 @@
+.main-menu {
+  @include obvodka;
+
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+
+    &--index {
+      background-color: $basic_green;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+  }
+}
+
+.main-menu__list {
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.main-menu__item {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 22px;
+    padding-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+    .main-menu--index & {
+      color: $white;
+    }
+  }
+}

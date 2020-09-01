@@ -1,0 +1,54 @@
+.page-header {
+  @include obvodka(blue);
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: auto;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 53px;
+    // padding-right: 408px;
+    padding-left: 110px;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+
+.page-header__button {
+  @media (max-width: $mobile-width-only) {
+    cursor: pointer;
+
+    &--hidden {
+      width: 24px;
+      height: 16px;
+    }
+
+    &--open {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
