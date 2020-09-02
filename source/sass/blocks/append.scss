@@ -44,14 +44,28 @@
     top: 16px;
   }
 
-  &::after {
-    left: -10vw;
-    width: 5vw;
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: -10vw;
+      width: 5vw;
+    }
   }
 
   &::before {
     right: -60vw;
     width: 55vw;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: -60%;
+      width: 50%;
+    }
+
+    &::before {
+      right: -90vw;
+      width: 85vw;
+    }
   }
 }
 
