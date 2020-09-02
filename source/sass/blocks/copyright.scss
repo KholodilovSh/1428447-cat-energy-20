@@ -1,4 +1,6 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
   padding: 22px 0 22px 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -7,10 +9,19 @@
   color: $special_dark-grey;
   background-color: $basic-grey;
 
-  @include obvodka(blue);
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+  }
 }
 
 .copyright__link {
-  padding-left: 19px;
-  padding-right: 140px;
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

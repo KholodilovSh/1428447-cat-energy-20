@@ -59,6 +59,12 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .about-cat label {

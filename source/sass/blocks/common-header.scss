@@ -1,7 +1,15 @@
 .common-header {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $grey-4;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
   }
 }
 
@@ -15,6 +23,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: auto;
+    padding-left: 30px;
     padding-top: 24px;
   }
 
@@ -36,6 +45,11 @@
 }
 
 .common-header__button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 22px;
   cursor: pointer;
   border: none;
 
@@ -45,8 +59,8 @@
     .common-header--closed &::before {
       content: "";
       position: absolute;
-      top: 32px;
-      right: 20px;
+      top: 12px;
+      right: 2px;
       width: 24px;
       height: 2px;
       background-color: $black;
@@ -62,7 +76,7 @@
     }
 
     .common-header--closed &::before {
-      top: 25px;
+      top: 4px;
       box-shadow:
         0 8px 0 0 $black,
         0 16px 0 0 $black;
@@ -93,6 +107,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    // 483 + 109 = меню+ отступ справа = 592
+    // min-width: 592px;
+    // margin-right: 109px;
     padding-top: 71px;
   }
 }
@@ -127,7 +144,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    // width: 100%;
+    margin: 0 109px 0 0;
   }
 }
 

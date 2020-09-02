@@ -17,6 +17,8 @@
     padding-right: 65px;
     padding-bottom: 65px;
     margin-top: 71px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,11 +30,15 @@
 }
 
 .owner__header {
-  margin-bottom: 32px;
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: $black;
   text-transform: none;
+
+  @media (max-width: $mobile-width-only) {
+    width: 187px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 71px;
@@ -44,6 +50,25 @@
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $basic-green;
+    top: 16px;
+  }
+
+  &::after {
+    left: -20%;
+    width: 10%;
+  }
+
+  &::before {
+    right: -50vw;
+    width: 45vw;
   }
 }
 

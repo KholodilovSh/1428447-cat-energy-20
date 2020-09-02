@@ -4,6 +4,15 @@
   background-color: $basic-grey;
   padding-top: 38px;
   padding-bottom: 32px;
+  border-bottom: 1px solid $grey-4;
 
-  @include obvodka;
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
 }

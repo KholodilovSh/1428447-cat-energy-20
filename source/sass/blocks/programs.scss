@@ -193,49 +193,6 @@
     width: 467px;
     padding-bottom: 23px;
   }
-
-  // формируем острие стрелки
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    left: 115px;
-    width: 7px;
-    height: 5px;
-    background-color: $black;
-  }
-
-  &::before {
-    bottom: -26px;
-    background-image: linear-gradient(to top right, $black 50%, $basic-grey 50%);
-  }
-
-  &::after {
-    bottom: -31px;
-    background-image: linear-gradient(to bottom right, black 50%, $basic-grey 50%);
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after,
-    &::before {
-      left: 202px;
-    }
-
-    &::before {
-      bottom: -16px;
-    }
-
-    &::after {
-      bottom: -21px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after,
-    &::before {
-      left: 205px;
-    }
-  }
 }
 
 .programs__decision {
@@ -251,15 +208,15 @@
     line-height: 30px;
   }
 
-  // формирование горизонтальной линии стрелки
   &::after {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 8px;
     left: 119px;
-    width: 17px;
-    height: 2px;
-    background-color: $black;
+    width: 24px;
+    height: 10px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       bottom: 13px;

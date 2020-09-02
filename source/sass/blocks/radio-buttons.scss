@@ -1,4 +1,5 @@
 .radio-buttons {
+  position: relative;
   margin: 0;
   padding-left: 0;
   padding-top: 20px;
@@ -10,18 +11,42 @@
   background-color: $white;
   text-transform: uppercase;
 
+  @media (max-width: $mobile-width-only) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: $grey-4;
+      left: -10%;
+      right: -10%;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding-left: 51px;
+    padding-left: 28px;
     padding-top: 25px;
     padding-bottom: 29px;
+    margin-left: 51px;
+    margin-right: 52px;
     font-size: 20px;
     line-height: 30px;
+    border: 1px solid $grey-6;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     width: 50%;
     padding-left: 28px;
+    margin-right: 0;
   }
 }
 

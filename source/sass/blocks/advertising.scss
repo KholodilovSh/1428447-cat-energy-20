@@ -8,13 +8,13 @@
     background-image: linear-gradient(to bottom, $white 55%, $grey-3 55%);
     background-repeat: no-repeat;
     background-position: top center;
+    border-top: 1px solid $grey-6;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, $white 25%, $grey-3 25%);
+    border: none;
   }
-
-  @include obvodka;
 }
 
 .advertising__header {

@@ -1,5 +1,6 @@
 .pad-products {
   padding-top: 28px;
+  margin-bottom: 39px;
   font-weight: normal;
   color: $black;
   background-color: $white;
@@ -10,6 +11,7 @@
 }
 
 .pad-products__header {
+  position: relative;
   margin: 0;
   padding-bottom: 35px;
   font-size: 24px;
@@ -27,16 +29,47 @@
     padding-left: 8.1vw;
     padding-bottom: 81px;
   }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    height: 2px;
+    background-color: $basic_green;
+  }
+
+  &::after {
+    right: -10%;
+    width: 25%;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -40%;
+      width: 60vw;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      left: -5%;
+      width: 5%;
+      top: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 10vw;
+    }
+  }
 }
 
 .pad-products__container {
   @media (min-width: $tablet-width) {
-    padding: 0 38px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0 39px;
-    margin-bottom: 60px;
+    margin: 0 0 60px 0;
     border: 1px solid $special-grey;
   }
 
@@ -56,23 +89,29 @@
   grid-template-areas: "one one"
     "two three"
     "four four";
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding: 13px 0 19px 0;
   list-style-type: none;
+  border-top: 1px solid $special_grey;
+
+  &:last-of-type {
+    border-bottom: 1px solid $special_grey;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "one two three"
       "four four four";
-    padding-top: 26px;
-    padding-bottom: 28px;
+    grid-template-columns: 1fr 1fr 93px;
+    padding: 26px 39px 28px 39px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    grid-template-areas: "one two three four";
+    grid-template-columns: 1fr 222px 104px;
+
+    padding: 15px 0 17px 0;
     border-bottom: 1px solid $special-grey;
 
     &:first-of-type {
@@ -118,10 +157,23 @@
 
 .pad-products__unit {
   grid-area: two;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .pad-products__price {
   grid-area: three;
+  text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .pad-products__button {

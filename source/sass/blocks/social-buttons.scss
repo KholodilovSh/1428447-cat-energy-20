@@ -4,10 +4,20 @@
   background-color: $basic-grey;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid $grey-4;
 
-  @include obvodka;
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 129px;
+    margin: 0;
+    border: none;
+  }
 }
 
 .social-buttons__item {
   list-style-type: none;
+}
+
+.social-buttons__icon--facebook {
+  height: 22px;
 }
