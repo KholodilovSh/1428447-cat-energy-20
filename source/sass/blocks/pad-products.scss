@@ -187,13 +187,16 @@
   border: none;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    // width: 633px;
-    // margin: 0 38px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 244px;
     margin: 0;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

@@ -50,6 +50,18 @@
   flex-grow: 1;
   padding: 13px;
   border: 1px solid $grey-6;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:active {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .about-cat p {

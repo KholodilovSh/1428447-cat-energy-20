@@ -18,6 +18,14 @@
   @media (min-width: $desktop-width) {
     margin-right: 110px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {

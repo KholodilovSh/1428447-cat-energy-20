@@ -110,6 +110,14 @@
   padding: 13px 13px 13px 13px;
   border: 1px solid $special_grey;
   text-transform: uppercase;
+
+  &:active {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .owner p {

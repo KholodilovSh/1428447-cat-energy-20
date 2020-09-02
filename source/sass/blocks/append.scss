@@ -98,4 +98,8 @@
   &:last-of-type {
     padding-bottom: 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

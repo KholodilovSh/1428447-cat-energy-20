@@ -227,4 +227,13 @@
       left: 188px;
     }
   }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
