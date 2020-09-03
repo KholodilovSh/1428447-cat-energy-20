@@ -17,12 +17,15 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
     padding-top: 12px;
     padding-bottom: 14px;
+    width: 87.5%;
+    min-width: 260px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    width: auto;
+    width: 34%;
     padding-left: 30px;
     padding-top: 24px;
   }
@@ -109,15 +112,14 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 66%;
     padding-top: 42px;
-    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     // 483 + 109 = меню+ отступ справа = 592
-    // min-width: 592px;
-    // margin-right: 109px;
+    width: 50%;
     padding-top: 71px;
   }
 }
@@ -127,32 +129,31 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 720px;
     height: 696px;
     background-image:
       url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, $white 5%, $basic-green 5%);
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: cover;
   }
 }
 
 
 .common-header__list {
   margin: 0;
-
-  @media (max-width: $mobile-width-only) {
-    padding: 0;
-  }
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding-right: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 100%;
+    padding-left: 132px;
+    padding-right: 109px;
     margin: 0 109px 0 0;
   }
 }
@@ -199,8 +200,10 @@
       padding-bottom: 8px;
       border-bottom: 2px solid $basic-green;
 
-      .common-header--index & {
-        border-bottom: 2px solid $white;
+      @media (min-width: $desktop-width) {
+        .common-header--index & {
+          border-bottom: 2px solid $white;
+        }
       }
     }
   }
