@@ -9,20 +9,20 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    width: 50%;
   }
-
-  @include obvodka(yellow);
 }
 
 .about-cat fieldset {
-  padding: 0 19px;
+  padding: 0;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0 71px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 111px;
+    padding: 0;
   }
 }
 
@@ -50,6 +50,18 @@
   flex-grow: 1;
   padding: 13px;
   border: 1px solid $grey-6;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .about-cat p {
@@ -58,6 +70,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 }
 

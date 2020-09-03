@@ -5,8 +5,7 @@
 @import "blocks/container.scss";
 @import "blocks/base.scss";
 @import "fonts.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-menu.scss";
+@import "blocks/common-header.scss";
 @import "blocks/promo.scss";
 @import "blocks/programs.scss";
 @import "blocks/special.scss";
@@ -31,7 +30,6 @@
 @import "blocks/form.scss";
 
 // Обертки
-@import "blocks/wrapper-header.scss";
 @import "blocks/wrapper-footer.scss";
 @import "blocks/wrapper-pads.scss";
 @import "blocks/wrapper-form.scss";

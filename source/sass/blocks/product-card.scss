@@ -3,9 +3,18 @@
   padding-bottom: 25px;
   font-style: normal;
   list-style-type: none;
-  background-color: $basic-grey;
+  background-color: $white;
 
-  @include obvodka(green);
+  @media (max-width: $tablet-width) {
+    border-top: 1px solid $grey-4;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, $white 20%, $basic-grey 20%);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }
 
 .product-card__wrapper {
@@ -16,20 +25,36 @@
   }
 }
 
-.product-card__img {
+.product-card__img-container {
+  position: relative;
+  width: 140px;
+  height: 112px;
+  margin-left: 6.5vw;
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
     width: 168px;
     height: 200px;
-    margin-left: 42px;
     margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
-    margin-left: 39px;
     margin-bottom: 46px;
   }
+}
+
+.product-card__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  max-width: none;
+  width: auto;
+  // width: 100%;
 }
 
 .product-card__table {
@@ -73,6 +98,7 @@
 
 .product-card__features {
   width: 142px;
+  border-collapse: collapse;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -88,15 +114,28 @@
   }
 }
 
+.product-card__feature {
+  @media (min-width: $tablet-width) {
+    height: 33px;
+  }
+}
+
 .product-card__feature-value {
   text-align: right;
+}
+
+.product-card__feature-value,
+.product-card__feature-name {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .product-card__order {
   display: block;
   padding-top: 13px;
   padding-bottom: 14px;
-  margin: 13px 20px 14px 20px;
+  margin: 13px 6.5% 14px 6.5%;
   text-align: center;
   font-size: 16px;
   line-height: 16px;
@@ -108,5 +147,17 @@
     margin: 33px 37px 40px 39px;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

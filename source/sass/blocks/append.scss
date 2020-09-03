@@ -1,4 +1,5 @@
 .append {
+  padding-left: 0;
   padding-top: 34px;
   padding-bottom: 34px;
   font-size: 16px;
@@ -6,10 +7,11 @@
   font-weight: normal;
   color: $black;
   background-color: $white;
+  border: none;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
-    padding-left: 71px;
+    padding-left: 51px;
     padding-right: 65px;
     padding-bottom: 54px;
     font-size: 20px;
@@ -17,21 +19,53 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 111px;
+    padding-left: 0;
     padding-right: 110px;
     padding-bottom: 61px;
   }
-
-  @include obvodka(violet);
 }
 
 .append__header {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $basic-green;
+    top: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: -10vw;
+      width: 5vw;
+    }
+  }
+
+  &::before {
+    right: -60vw;
+    width: 55vw;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: -60%;
+      width: 50%;
+    }
+
+    &::before {
+      right: -90vw;
+      width: 85vw;
+    }
   }
 }
 
@@ -48,7 +82,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -63,5 +97,9 @@
 
   &:last-of-type {
     padding-bottom: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

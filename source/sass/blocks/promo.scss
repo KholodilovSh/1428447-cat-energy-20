@@ -1,32 +1,28 @@
 .promo {
   position: relative;
-  text-align: left;
+  color: $white;
+  text-align: center;
 
   @media (max-width: $mobile-width-only) {
-    color: $white;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-image:
+      url("../img/index-background-mobile@1x.jpg"),
+      linear-gradient(to bottom, $basic-green-2 65%, $white 35%);
     background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
+    background-position: top center;
   }
 
   @media (min-width: $tablet-width) {
     color: $black;
+    text-align: left;
   }
-
-  @include obvodka(blue);
 }
 
 .promo__header {
+  padding: 27px 0 25px 0;
   margin: 0;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: normal;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 27px 0 25px 0;
-    background-color: $basic-green;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -38,35 +34,31 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     padding-top: 111px;
-    padding-left: 190px;
+    // p-l = 190 - 110 = 80
+    padding-left: 80px;
     padding-bottom: 40px;
     z-index: 30;
   }
 }
 
 .promo__slogan {
-  text-transform: uppercase;
-  margin: 0;
   padding: 0;
+  margin: 0 0 29px 0;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: normal;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 29px;
-    background-color: $basic-green;
-  }
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     padding-left: 118px;
     margin-bottom: 49px;
-    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 190px;
+    // p-l = 190 - 110 = 80
+    padding-left: 80px;
     margin-bottom: 52px;
   }
 }
@@ -86,7 +78,8 @@
 
   @media (min-width: $desktop-width) {
     top: 29px;
-    left: 558px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 552px;
     height: 499px;
     z-index: 3;
@@ -103,11 +96,6 @@
   padding-bottom: 7px;
   background-color: $basic-green;
 
-  @media (max-width: $mobile-width-only) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   @media (min-width: $tablet-width) {
     width: 244px;
     font-size: 20px;
@@ -120,7 +108,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
+    // p-l = 190 - 110 = 80
+    margin-left: 80px;
     margin-bottom: 267px;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
