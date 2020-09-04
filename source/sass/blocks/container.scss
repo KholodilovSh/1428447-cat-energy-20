@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: 84.8%;
+    max-width: 1920px;
 
     &.common-header {
       position: static;
