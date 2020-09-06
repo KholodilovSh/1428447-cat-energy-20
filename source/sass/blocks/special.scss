@@ -94,6 +94,7 @@
     background-color: $basic_green;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-width: $tablet-width) {
       width: 80px;
