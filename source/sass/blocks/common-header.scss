@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 34%;
-    padding-left: 30px;
+    // padding-left: 20px;
     padding-top: 24px;
   }
 
@@ -60,7 +60,7 @@
   width: 30px;
   height: 30px;
   top: 20px;
-  right: 22px;
+  right: 0;
   cursor: pointer;
   border: none;
 
@@ -111,8 +111,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 66%;
-    padding-top: 42px;
+    width: 61%;
+    padding-top: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,28 +120,6 @@
     min-width: 720px;
     width: 50%;
     padding-top: 71px;
-  }
-}
-
-.common-header--index {
-  @media (min-width: $desktop-width) {
-    background-color: $basic-green;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // height: 696px;
-    // background-image:
-    //   url("../img/index-background-desktop@1x.jpg"),
-    //   linear-gradient(to right, $white 5%, $basic-green 5%);
-    // background-repeat: no-repeat;
-    // background-position: top right;
-    // background-size: cover;
-
-    // @media (min-resolution: 1.5dppx) {
-    //   background-image:
-    //   url("../img/index-background-desktop@2x.jpg"),
-    //   linear-gradient(to right, $white 5%, $basic-green 5%);
-    // }
   }
 }
 
