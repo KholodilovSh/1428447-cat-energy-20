@@ -37,8 +37,8 @@
 
     @media (min-resolution: 1.5dppx) {
       background-image:
-      url("../img/index-background-desktop@2x.jpg"),
-      linear-gradient(to right, $white 5%, $basic-green 5%);
+        url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to right, $white 5%, $basic-green 5%);
     }
   }
 }

@@ -266,13 +266,13 @@
       transform: translateX(-50%);
       border-radius: 50%;
       z-index: 1;
-      box-shadow: 0px 1px 3px rgba($black, 0.16);
+      box-shadow: 0 1px 3px rgba($black, 0.16);
     }
   }
 
   &:hover::before {
     @media (min-width: $tablet-width) {
-      box-shadow: 0px 2px 4px rgba($black, 0.19);
+      box-shadow: 0 2px 4px rgba($black, 0.19);
     }
   }
 
@@ -305,7 +305,7 @@
 
     &::before {
       border: 1px solid $basic-green;
-      box-shadow: 0px 3px 5px rgba($black, 0.2);
+      box-shadow: 0 3px 5px rgba($black, 0.2);
     }
   }
 }
@@ -333,6 +333,7 @@
       background-color: $grey-11;
       border-radius: 3px;
     }
+
     @media (min-width: $desktop-width) {
       right: 70px;
     }

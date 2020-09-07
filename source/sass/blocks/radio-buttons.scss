@@ -108,15 +108,14 @@
   }
 }
 
-
 .radio-buttons__label:hover::before {
   border: 1px solid $grey-7;
 }
 
 .radio-buttons__input:active {
-    & + .radio-buttons__label,
-    & + .radio-buttons__label::after,
-    & + .radio-buttons__label::before {
+  & + .radio-buttons__label,
+  & + .radio-buttons__label::after,
+  & + .radio-buttons__label::before {
     opacity: 0.3;
   }
 }

@@ -152,9 +152,9 @@
 }
 
 .append__input:active {
-    & + .append__label,
-    & + .append__label::after,
-    & + .append__label::before {
+  & + .append__label,
+  & + .append__label::after,
+  & + .append__label::before {
     opacity: 0.3;
   }
 }

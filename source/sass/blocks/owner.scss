@@ -127,7 +127,7 @@
     border: 2px solid $special_dark-grey;
   }
 
-  &:invalid {
+  &:placeholder-shown {
     border: 2px solid $status_error;
   }
 }
