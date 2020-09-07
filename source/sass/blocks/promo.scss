@@ -1,5 +1,4 @@
 .promo {
-  // position: relative;
   color: $white;
   text-align: center;
   z-index: 1;
@@ -53,7 +52,7 @@
 }
 
 .promo__header {
-  padding: 27px 0 25px 0;
+  padding: 28px 0 25px 0;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
@@ -127,8 +126,8 @@
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {

@@ -4,10 +4,13 @@
   background-color: $basic-grey;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 56px;
+  padding-left: 56px;
   border-bottom: 1px solid $grey-4;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    padding-right: 0;
     width: 129px;
     margin: 0;
     border: none;
