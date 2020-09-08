@@ -179,21 +179,25 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 428px;
-    left: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 600px;
     height: 500px;
   }
 
   @media (min-width: $desktop-width) {
     top: 0;
-    left: 680px;
+    // left: 680px;
+    left: 75%;
+    transform: translateX(-50%);
     width: 600px;
     height: 500px;
   }
 }
 
-
 .advertising__slider {
+  text-align: center;
+
   @media (min-width: $desktop-width) {
     width: 50%;
   }
