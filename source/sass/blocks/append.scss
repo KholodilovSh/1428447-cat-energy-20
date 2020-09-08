@@ -103,3 +103,58 @@
     opacity: 0.3;
   }
 }
+
+// Стилизация чек-боксов
+.append__label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $special_grey;
+    margin-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.append__input:checked + .append__label::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 15px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+
+.append__label:hover::before {
+  border: 1px solid $grey-7;
+}
+
+.append__input:active {
+  & + .append__label,
+  & + .append__label::after,
+  & + .append__label::before {
+    opacity: 0.3;
+  }
+}

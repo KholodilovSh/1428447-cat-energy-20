@@ -1,24 +1,58 @@
 .promo {
-  position: relative;
   color: $white;
   text-align: center;
-
-  @media (max-width: $mobile-width-only) {
-    background-image:
-      url("../img/index-background-mobile@1x.jpg"),
-      linear-gradient(to bottom, $basic-green-2 65%, $white 35%);
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     color: $black;
     text-align: left;
   }
+
+
+  @media (max-width: $mobile-width-only) {
+    background-size: auto 65%, 100% 100%;
+    background-image:
+      url("../img/index-background-mobile@1x.jpg"),
+      linear-gradient(to bottom, $basic-green-2 65%, $white 35%);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image:
+        url("../img/index-background-mobile@2x.jpg"),
+        linear-gradient(to bottom, $basic-green-2 65%, $white 35%);
+    }
+  }
+
+  &::before {
+    content: "";
+    z-index: -1;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 696px;
+      background-image:
+        url("../img/index-background-desktop@1x.jpg"),
+        linear-gradient(to right, $white 5%, $basic-green 5%);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 100%;
+      background-color: $basic_green-3;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image:
+          url("../img/index-background-desktop@2x.jpg"),
+          linear-gradient(to right, $white 5%, $basic-green 5%);
+      }
+    }
+  }
 }
 
 .promo__header {
-  padding: 27px 0 25px 0;
+  padding: 28px 0 25px 0;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
@@ -27,7 +61,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 62px 0 41px 117px;
+    padding: 62px 0 41px 88px;
     background-color: $white;
   }
 
@@ -52,8 +86,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 118px;
-    margin-bottom: 49px;
+    padding-left: 89px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +104,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 263px;
-    left: 29px;
+    left: 0;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -92,16 +126,16 @@
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     width: 244px;
     font-size: 20px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    margin-left: 112px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    margin-left: 83px;
     margin-bottom: 526px;
     color: $white;
     text-align: center;

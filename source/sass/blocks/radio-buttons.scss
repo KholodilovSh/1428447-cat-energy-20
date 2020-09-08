@@ -57,4 +57,65 @@
   &:last-of-type {
     padding-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+  }
+}
+
+// Стилизация радио-кнопок
+.radio-buttons__label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $special_grey;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.radio-buttons__input:checked + .radio-buttons__label::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 15px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio-buttons__label:hover::before {
+  border: 1px solid $grey-7;
+}
+
+.radio-buttons__input:active {
+  & + .radio-buttons__label,
+  & + .radio-buttons__label::after,
+  & + .radio-buttons__label::before {
+    opacity: 0.3;
+  }
 }

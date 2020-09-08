@@ -41,7 +41,7 @@
       position: absolute;
       width: 50px;
       height: 50px;
-      top: 21px;
+      top: 24px;
       border-radius: 50%;
       background-color: $basic-green;
 
@@ -76,12 +76,12 @@
   &--fat {
     &::before {
       width: 50px;
-      height: 53px;
+      height: 50px;
       top: 21px;
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
 
       @media (max-width: $mobile-width-only) {
-        left: 22px;
+        left: 29px;
       }
 
       @media (min-width: $tablet-width) {
@@ -104,8 +104,8 @@
     &::before {
       width: 67px;
       height: 50px;
-      top: 29px;
-      background-image: url("../../img/icon-cat-pro.svg");
+      top: 36px;
+      background-image: url("../img/icon-cat-pro.svg");
 
       @media (max-width: $mobile-width-only) {
         left: 13px;
@@ -133,11 +133,11 @@
   min-width: 280px;
   padding-bottom: 18px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 53px;
+    padding-bottom: 55px;
     margin-bottom: 30px;
   }
 
@@ -170,7 +170,7 @@
 .programs__text {
   position: relative;
   padding-bottom: 23px;
-  margin: 0 20px 15px 20px;
+  margin: 0 20px 17px 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -183,7 +183,7 @@
   @media (min-width: $tablet-width) {
     width: 377px;
     padding-left: 52px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
     margin: 0;
     font-size: 16px;
     line-height: 24px;
@@ -215,7 +215,7 @@
     left: 119px;
     width: 24px;
     height: 10px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -230,7 +230,7 @@
 
   &:hover::after {
     width: 32px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {

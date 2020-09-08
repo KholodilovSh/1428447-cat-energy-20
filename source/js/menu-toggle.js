@@ -1,6 +1,5 @@
 var commonHeader = document.querySelector(".common-header")
 var buttonToggle = document.querySelector('.common-header__button');
-// var navMenu = document.querySelector(".common-header__menu");
 
 if (commonHeader.classList.contains("common-header--nojs")) {
   commonHeader.classList.remove("common-header--nojs");
