@@ -1,6 +1,7 @@
 .gift {
   width: 280px;
   height: 289px;
+  margin-bottom: 35px;
   color: $white;
   background-color: $basic-green;
   text-align: center;
@@ -18,6 +19,7 @@
     justify-content: space-between;
     width: 92.5%;
     height: 200px;
+    margin-bottom: 0;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
@@ -30,6 +32,7 @@
     align-self: center;
     margin-left: 79px;
     margin-right: 8.1%;
+    margin-bottom: 0;
     width: 245px;
     height: 289px;
     flex-shrink: 0;
@@ -43,7 +46,7 @@
 
 .gift__img {
   padding-top: 58px;
-  padding-bottom: 48px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     margin-left: 78px;
