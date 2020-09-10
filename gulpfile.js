@@ -6,10 +6,10 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("csso");
-// const rename = require("rename");
+const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
-//const createWebp = require("gulp-webp");
-// const svgstore = require("svg-store");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
 
 // Styles
 
@@ -57,52 +57,50 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-// images
-
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
   .pipe(imagemin([
   imagemin.optipng({optimizationLevel: 3}),
-  imagemin.jpegtran({progressive: true}),
+  imagemin.mozjpeg({progressive: true}),
   imagemin.svgo()
   ]))
 }
 
 exports.images = images;
 
-// // webp
+// webp
 
-// const createWebp = () => {
-//   return gulp.src("source/img/**/*.{png,jpg}")
-//   .pipe(webp({quality: 90}))
-//   .pipe(gulp.dest("source/img"))
-// }
+const Webp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
+}
 
-// exports.webp = createWebp;
+exports.webp = Webp;
 
 // sprite
 
-// const sprite = () => {
-//   return gulp.src("source/img/**/icon-*.svg")
-//   .pipe(svgstore())
-//   .pipe(rename("sprite.svg"))
-//   .pipe(gulp.dest("source/img"))
-// }
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("source/img"))
+}
 
-// exports.sprite = sprite;
+exports.sprite = sprite;
 
-// // copy
+// copy
 
-// const copy = () => {
-//   return gulp.src([
-//   "source/fonts/**/*.{woff,woff2}",
-//   "source/img/**",
-//   "source/js/**",
-//   "source/*.ico"
-//   ], {
-//   base: "source"
-//   })
-//   .pipe(gulp.dest(“build"));
-// };
+const copy = () => {
+  return gulp.src([
+  "source/fonts/**/*.{woff,woff2}",
+  "source/img/**",
+  "source/js/**",
+  "source/*.ico"
+  ], {
+  base: "source"
+  })
+  .pipe(gulp.dest("build"));
+};
 
-// exports.copy = copy;
+exports.copy = copy;
