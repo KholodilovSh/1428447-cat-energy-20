@@ -19,16 +19,15 @@
 
 .social-buttons__item {
   list-style-type: none;
+}
 
+.social-buttons__link {
   &:hover {
     opacity: 0.8;
+    fill: $basic-green;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.social-buttons__icon--facebook {
-  height: 22px;
 }

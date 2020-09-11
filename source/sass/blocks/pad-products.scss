@@ -37,6 +37,7 @@
     top: 14px;
     height: 2px;
     background-color: $basic_green;
+    overflow: hidden;
   }
 
   &::after {
@@ -186,6 +187,7 @@
   background-color: $basic-green;
   border: none;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     width: 244px;

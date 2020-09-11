@@ -1,6 +1,8 @@
 .common-header {
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $grey-4;
+    tablet: none;
+    desktop: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -35,25 +37,31 @@
   }
 }
 
-.common-header__logo {
-  @media (min-width: $tablet-width) {
-    width: 174px;
-    height: 52px;
-  }
+// .common-header__logo {
 
-  @media (min-width: $desktop-width) {
-    width: 202px;
-    height: 59px;
-  }
+//   & .desktop,
+//   & .tablet {
+//     display: none;
+//   }
 
-  &:hover {
-    opacity: 0.8;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 174px;
+//     height: 52px;
+//   }
 
-  &:active {
-    opacity: 0.6;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 202px;
+//     height: 59px;
+//   }
+
+//   &:hover {
+//     opacity: 0.8;
+//   }
+
+//   &:active {
+//     opacity: 0.6;
+//   }
+// }
 
 .common-header__button {
   position: absolute;
