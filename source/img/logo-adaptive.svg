@@ -3,14 +3,14 @@
     .logo {
       width: 181px;
       height: 36px;
+    }
 
-      &:hover {
-        opacity: 0.8;
-      }
+    logo:hover {
+      opacity: 0.8;
+    }
 
-      &:active {
-        opacity: 0.6;
-      }
+    logo:active {
+      opacity: 0.6;
     }
 
     @media (min-width: 768px) {
