@@ -121,11 +121,12 @@ exports.html = html;
 
 const clean = () => {
   return del("build");
- };
- exports.clean = clean;
+};
+
+exports.clean = clean;
 
 const build = gulp.series(
- clean, copy, styles, sprite, html
+  clean, copy, styles, sprite, html
 )
 
 exports.build = build;
