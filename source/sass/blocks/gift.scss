@@ -45,15 +45,15 @@
 }
 
 .gift__img {
-  padding-top: 60px;
-  padding-bottom: 59px;
+  margin-top: 58px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     margin-left: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 57px;
+    margin-top: 57px;
     margin-left: 0;
   }
 }

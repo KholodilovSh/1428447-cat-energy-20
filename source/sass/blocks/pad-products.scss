@@ -30,40 +30,16 @@
     padding-bottom: 81px;
   }
 
-  &::before,
   &::after {
     content: "";
     position: absolute;
     top: 14px;
     height: 2px;
+    width: 100%;
     background-color: $basic_green;
-    overflow: hidden;
-  }
-
-  &::after {
-    right: -10%;
-    width: 22%;
 
     @media (min-width: $tablet-width) {
       top: 20px;
-      width: 50%;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -40%;
-      width: 60vw;
-    }
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      left: -5%;
-      width: 5%;
-      top: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 10vw;
     }
   }
 }
@@ -106,9 +82,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     grid-template-areas: "one two three four";
     grid-template-columns: 1fr 222px 104px;
 
