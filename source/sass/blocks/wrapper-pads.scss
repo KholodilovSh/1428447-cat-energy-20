@@ -3,6 +3,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     align-content: center;
   }
 
@@ -16,7 +17,7 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      top: 91px;
+      top: 96px;
     }
   }
 }

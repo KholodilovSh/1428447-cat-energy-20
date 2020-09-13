@@ -28,13 +28,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 67px;
-    align-self: center;
+    margin-top: 103px;
     margin-left: 79px;
     margin-right: 8.1%;
     margin-bottom: 0;
     width: 245px;
     height: 289px;
+    align-self: center;
     flex-shrink: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
@@ -53,8 +53,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 57px;
-    margin-left: 0;
+    margin-top: 63px;
+    margin-left: 16px;
+    margin-bottom: 59px;
   }
 }
 
@@ -70,5 +71,9 @@
     padding-top: 71px;
     margin-right: 124px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 48px;
   }
 }

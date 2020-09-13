@@ -26,8 +26,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 8.1vw;
-    padding-bottom: 81px;
+    padding-left: 7.5vw;
+    padding-bottom: 88px;
   }
 }
 
@@ -38,7 +38,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 8.1vw;
+    margin-bottom: 37px;
+    padding-left: 7.5vw;
     border: none;
   }
 }
@@ -70,9 +71,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-areas: "one two three four";
-    grid-template-columns: 1fr 222px 104px;
-
-    padding: 15px 0 17px 0;
+    grid-template-columns: 1fr 222px 97px 244px;
+    padding: 15px 0 25px 0;
     border-bottom: 1px solid $special-grey;
 
     &:first-of-type {
@@ -113,6 +113,9 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -133,6 +136,7 @@
   text-align: right;
 
   @media (min-width: $desktop-width) {
+    margin-left: 19px;
     text-align: left;
   }
 }
@@ -151,7 +155,7 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin: 0;
+    margin: -9px 0 0 5px;
   }
 
   &:hover {
