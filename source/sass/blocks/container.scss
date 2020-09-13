@@ -13,15 +13,11 @@
 
   @media (min-width: $desktop-width) {
     width: 84.8%;
-    max-width: 1440px;
+    max-width: 1220px;
 
     &--header {
       width: 50%;
       max-width: 960px;
     }
-  }
-
-  &--promo {
-    // position: static;
   }
 }
