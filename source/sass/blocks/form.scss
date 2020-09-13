@@ -36,8 +36,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 47%;
     margin-left: 0;
+    margin-right: 78px;
   }
 
   &:hover {
@@ -59,5 +60,9 @@
   @media (min-width: $tablet-width) {
     margin-top: 13px;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
   }
 }
