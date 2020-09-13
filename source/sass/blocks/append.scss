@@ -1,4 +1,5 @@
 .append {
+  position: relative;
   padding-left: 0;
   padding-top: 34px;
   padding-bottom: 34px;
@@ -24,17 +25,6 @@
     padding-right: 110px;
     padding-bottom: 52px;
   }
-}
-
-.append__header {
-  position: relative;
-  font-size: 24px;
-  line-height: 26px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
 
   &::before {
     content: "";
@@ -47,6 +37,17 @@
     @media (min-width: $tablet-width) {
       top: 22px;
     }
+  }
+}
+
+.append__header {
+  position: relative;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
