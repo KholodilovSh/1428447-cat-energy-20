@@ -1,5 +1,5 @@
 .pad-products {
-  padding-top: 24px;
+  padding-top: 68px;
   margin-bottom: 39px;
   font-weight: normal;
   color: $black;
@@ -28,19 +28,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 8.1vw;
     padding-bottom: 81px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    height: 2px;
-    width: 100%;
-    background-color: $basic_green;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-    }
   }
 }
 

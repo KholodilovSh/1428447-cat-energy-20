@@ -122,7 +122,8 @@ exports.html = html;
 const js = () => {
   return gulp.src('source/js/*.js')
     .pipe(jsmin())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(sync.stream());
 };
 
 exports.js = js;

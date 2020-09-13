@@ -1,6 +1,22 @@
 .wrapper-pads {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-content: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    height: 2px;
+    width: 100%;
+    background-color: $basic_green;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+    }
   }
 }
