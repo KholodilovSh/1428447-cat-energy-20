@@ -32,7 +32,7 @@ $black-1: #111111;
 $grey-shadow: #c4c4c4;
 
 // Реальные брейкпойнты
-$mobile-width-only: 767px;
 $tablet-width: 768px;
-$tablet-width-only: 1439px;
+$mobile-width-only: ($tablet-width - 1px);
 $desktop-width: 1440px;
+$tablet-width-only: ($desktop-width - 1px);
