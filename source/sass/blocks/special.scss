@@ -63,7 +63,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 246px;
+    width: 245px;
     height: 280px;
     margin: 0;
     padding-top: 151px;
@@ -71,7 +71,6 @@
     font-size: 16px;
     line-height: 24px;
     counter-increment: number;
-    width: 245px;
 
     &::after {
       content: counter(number);
