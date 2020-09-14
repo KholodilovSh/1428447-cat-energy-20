@@ -37,7 +37,7 @@
     margin: 0 auto;
     width: 168px;
     height: 200px;
-    margin-bottom: 34px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +91,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 21px;
+    padding-bottom: 15px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -112,6 +112,7 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    margin-left: 1px;
     width: 252px;
     font-size: 16px;
   }
@@ -124,10 +125,6 @@
 
 .product-card__feature {
   @media (min-width: $tablet-width) {
-    height: 33px;
-  }
-
-  @media (min-width: $desktop-width) {
     height: 32px;
   }
 }
@@ -156,7 +153,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 33px 37px 40px 39px;
+    margin: 30px 37px 40px 39px;
     font-size: 16px;
     line-height: 16px;
   }

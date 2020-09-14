@@ -27,12 +27,21 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    width: 34%;
-    padding-top: 24px;
+    width: 37%;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 34%;
     padding-top: 53px;
+    margin-left: 0;
+  }
+}
+
+.common-header__logo {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    width: 197px;
+    height: 50px;
   }
 }
 
@@ -97,8 +106,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // 483 + 109 = меню+ отступ справа = 592
-    min-width: 720px;
+    min-width: 704px;
     width: 50%;
     padding-top: 71px;
   }
@@ -120,7 +128,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     padding-right: 0;
-    margin: 0 109px 0 132px;
+    margin: 0 95px 0 132px;
   }
 }
 
