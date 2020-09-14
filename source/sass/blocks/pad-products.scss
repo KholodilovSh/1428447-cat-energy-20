@@ -1,5 +1,5 @@
 .pad-products {
-  padding-top: 24px;
+  padding-top: 68px;
   margin-bottom: 39px;
   font-weight: normal;
   color: $black;
@@ -26,55 +26,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 8.1vw;
-    padding-bottom: 81px;
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    height: 2px;
-    background-color: $basic_green;
-  }
-
-  &::after {
-    right: -10%;
-    width: 22%;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-      width: 50%;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -40%;
-      width: 60vw;
-    }
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      left: -5%;
-      width: 5%;
-      top: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 10vw;
-    }
+    padding-left: 7.5vw;
+    padding-bottom: 88px;
   }
 }
 
 .pad-products__container {
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px 0;
+    margin: 0 0 66px 0;
     border: 1px solid $special-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 8.1vw;
+    margin-bottom: 37px;
+    padding-left: 7.5vw;
     border: none;
   }
 }
@@ -101,17 +66,13 @@
     grid-template-areas: "one two three"
       "four four four";
     grid-template-columns: 1fr 1fr 93px;
-    padding: 26px 39px 28px 39px;
+    padding: 26px 39px 27px 37px;
   }
 
   @media (min-width: $desktop-width) {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     grid-template-areas: "one two three four";
-    grid-template-columns: 1fr 222px 104px;
-
-    padding: 15px 0 17px 0;
+    grid-template-columns: 1fr 222px 97px 244px;
+    padding: 15px 0 25px 0;
     border-bottom: 1px solid $special-grey;
 
     &:first-of-type {
@@ -130,6 +91,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -150,8 +112,15 @@
   line-height: 14px;
   color: $special_dark-grey;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    margin-top: 5px;
   }
 }
 
@@ -171,7 +140,12 @@
   grid-area: three;
   text-align: right;
 
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-right: -2px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-left: 19px;
     text-align: left;
   }
 }
@@ -186,10 +160,11 @@
   background-color: $basic-green;
   border: none;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin: 0;
+    margin: -9px 0 0 5px;
   }
 
   &:hover {

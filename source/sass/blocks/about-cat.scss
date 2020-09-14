@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    margin-right: 37px;
     width: 50%;
   }
 }
@@ -18,7 +19,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 0 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,16 +52,16 @@
   padding: 13px;
   border: 1px solid $grey-6;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 23px;
+  }
+
   &:hover {
     border: 1px solid $special_grey;
   }
 
   &:focus {
     border: 2px solid $special_dark-grey;
-  }
-
-  &:invalid {
-    border: 2px solid $status_error;
   }
 }
 
@@ -69,7 +70,7 @@
   padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +81,8 @@
 }
 
 .about-cat label {
-  margin-right: 14px;
+  margin-left: -3px;
+  margin-right: 15px;
 
   @media (min-width: $tablet-width) {
     margin-right: 10px;

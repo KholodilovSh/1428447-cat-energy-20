@@ -7,15 +7,15 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
+    padding-top: 62px;
     padding-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 570px;
-    left: 110px;
-    top: 95px;
+    left: 115px;
+    top: 101px;
     z-index: 1;
   }
 
@@ -45,7 +45,7 @@
     width: 271px;
     padding-left: 71px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 
@@ -62,19 +62,20 @@
     display: flex;
     flex-direction: column;
     // (159px+72px = 231px)
-    width: 231px;
+    width: (159px + 72px);
     padding-right: 72px;
     font-size: 16px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    width: 247px;
     text-align: left;
   }
 }
 
 .contacts__spb {
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
+    padding-top: 19px;
   }
 }

@@ -1,0 +1,44 @@
+.logo {
+  width: 181px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    // height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    // height: 59px;
+  }
+
+  // &:hover {
+  //   opacity: 0.8;
+  // }
+
+  // &:active {
+  //   opacity: 0.6;
+  // }
+}
+
+// .logo__tablet {
+//   display: none;
+
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
+// }
+
+// .logo__desktop {
+//   display: none;
+
+//   @media (min-width: $desktop-width) {
+//     display: block;
+//   }
+// }
+
+// .logo__circle {
+//   @media (min-width: $tablet-width) {
+//     display: none;
+//   }
+// }

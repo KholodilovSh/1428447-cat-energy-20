@@ -10,18 +10,18 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
-    padding-bottom: 83px;
+    padding-bottom: 61px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
-    padding-bottom: 84px;
+    padding-bottom: 59px;
   }
 
   &--form {
-    padding-top: 27px;
+    padding-top: 32px;
     padding-bottom: 37px;
 
     @media (min-width: $tablet-width) {

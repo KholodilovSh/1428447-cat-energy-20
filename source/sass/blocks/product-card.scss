@@ -5,7 +5,7 @@
   list-style-type: none;
   background-color: $white;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     border-top: 1px solid $grey-4;
   }
 
@@ -37,13 +37,13 @@
     margin: 0 auto;
     width: 168px;
     height: 200px;
-    margin-bottom: 34px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
   }
 }
 
@@ -91,10 +91,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 21px;
+    padding-bottom: 15px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
   }
 }
 
@@ -108,18 +112,20 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    margin-left: 1px;
     width: 252px;
     font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 180px;
+    margin-left: 5px;
+    width: 167px;
   }
 }
 
 .product-card__feature {
   @media (min-width: $tablet-width) {
-    height: 33px;
+    height: 32px;
   }
 }
 
@@ -147,12 +153,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 33px 37px 40px 39px;
+    margin: 30px 37px 40px 39px;
     font-size: 16px;
     line-height: 16px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 32px;
     margin-bottom: 40px;
   }
 

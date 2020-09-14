@@ -1,7 +1,9 @@
 .append {
+  position: relative;
   padding-left: 0;
   padding-top: 34px;
   padding-bottom: 34px;
+  margin-left: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -11,9 +13,9 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
-    padding-left: 51px;
+    padding-left: 42px;
     padding-right: 65px;
-    padding-bottom: 54px;
+    padding-bottom: 49px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -21,7 +23,20 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 110px;
-    padding-bottom: 61px;
+    padding-bottom: 52px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    height: 2px;
+    width: 100%;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 }
 
@@ -34,39 +49,6 @@
     font-size: 36px;
     line-height: 36px;
   }
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: $basic-green;
-    top: 16px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      left: -10vw;
-      width: 5vw;
-    }
-  }
-
-  &::before {
-    right: -60vw;
-    width: 55vw;
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      left: -60%;
-      width: 50%;
-    }
-
-    &::before {
-      right: -90vw;
-      width: 85vw;
-    }
-  }
 }
 
 .append__list {
@@ -76,18 +58,18 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-    column-gap: 132px;
+    row-gap: 27px;
+    column-gap: 87px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 326px 326px 326px 326px;
+    column-gap: 0;
   }
 }
 
 .append__item {
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   list-style-type: none;
   text-transform: uppercase;
 
@@ -124,7 +106,7 @@
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      margin-right: 20px;
+      margin-right: 17px;
     }
   }
 }

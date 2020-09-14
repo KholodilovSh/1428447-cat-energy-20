@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     margin-bottom: 71px;
+    margin-left: 110px;
   }
 }
 
@@ -26,7 +27,7 @@
     line-height: 36px;
     padding-top: 77px;
     padding-left: 53px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,6 +152,14 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
+
+      & .programs__text {
+        width: 427px;
+
+        @media (min-width: $desktop-width) {
+          width: 517px;
+        }
+      }
     }
   }
 
@@ -181,7 +190,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 377px;
+    width: 395px;
     padding-left: 52px;
     padding-bottom: 52px;
     margin: 0;
@@ -190,8 +199,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 467px;
-    padding-bottom: 23px;
+    // ширина абзаца + левый отступ
+    width: (467px + 52px);
+    padding-bottom: 27px;
   }
 }
 

@@ -16,11 +16,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 67px;
     margin-right: 110px;
   }
 
   &:hover {
     opacity: 0.8;
+
+    & .copyright__icon {
+      color: $basic-green;
+    }
   }
 
   &:active {
@@ -31,5 +36,9 @@
 .copyright__link {
   @media (min-width: $tablet-width) {
     padding-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
   }
 }
