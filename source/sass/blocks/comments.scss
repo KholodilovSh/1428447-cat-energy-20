@@ -28,7 +28,9 @@
     position: absolute;
     top: 14px;
     height: 2px;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {

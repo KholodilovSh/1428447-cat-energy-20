@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи (форма) </title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" crossorigin="anonimus" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff2" crossorigin="anonimus" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 </head>
 <body>
   <svg  style="display: none">
@@ -19,9 +19,9 @@
     <div class="common-header__wrapper container container--header">
       <a class="common-header__link" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="../img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-          <img class="common-header__logo" src="../img/logo-mobile.svg" width="196" height="37" alt="">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="common-header__logo" src="img/logo-mobile.svg" width="196" height="37" alt="">
         </picture>
       </a>
       <button class="common-header__button" type="button">
@@ -130,7 +130,7 @@
   </main>
 
   <footer>
-    <div class="contacts__wrapper">
+    <div class="wrapper-contacts-location">
       <section class="contacts contacts--form">
         <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
@@ -139,45 +139,45 @@
       <section class="location">
         <a class="location__link" href="https://goo.gl/maps/oMgYmoi7jmtzHwTD8" target="_blank">
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="../img/bg-map-desktop.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="../img/bg-map-tablet.webp">
-            <source type="image/webp" srcset="../img/bg-map-mobile.webp">
-            <source media="(min-width: 1440px)" srcset="../img/bg-map-desktop.png">
-            <source media="(min-width: 768px)" srcset="../img/bg-map-tablet.png">
-            <img class="location__map" src="../img/bg-map-mobile.png" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet.webp">
+            <source type="image/webp" srcset="img/bg-map-mobile.webp">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet.png">
+            <img class="location__map" src="img/bg-map-mobile.png" width="320" height="362" alt="Наш офис: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
           </picture>
         </a>
       </section>
     </div>
     <div class="wrapper-footer">
       <a class="footer-logo container" href="index.html" aria-label="на главную страницу">
-        <img class="footer-logo__img" src="../img/logo-footer.svg" width="128" height="24" alt="">
+        <img class="footer-logo__img" src="img/logo-footer.svg" width="128" height="24" alt="">
       </a>
       <ul class="social-buttons container">
         <li class="social-buttons__item">
           <a class="social-buttons__link" href="#" aria-label="вконтакте">
             <svg class="social-buttons__icon" width="23" height="16" viewBox="0 0 22 12">
-              <use xlink:href="../img/sprite.svg#icon-vk"></use>
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social-buttons__item">
           <a class="social-buttons__link" href="#" aria-label="инстаграм">
             <svg class="social-buttons__icon" width="16" height="16" viewBox="0 0 16.1 16">
-              <use xlink:href="../img/sprite.svg#icon-insta"></use>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-buttons__item">
           <a class="social-buttons__link" href="#" aria-label="фейсбук">
             <svg class="social-buttons__icon" width="22" height="22" viewBox="0 0 10 19">
-              <use xlink:href="../img/sprite.svg#icon-fb"></use>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="copyright container">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           HTML Academy
         </a>
         <svg class="copyright__icon" width="27" height="34" viewBox="0 0 60 60" role="img">

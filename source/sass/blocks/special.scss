@@ -2,10 +2,6 @@
   font-weight: normal;
   color: $black;
   background-color: $white;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 110px;
-  }
 }
 
 .special__header {

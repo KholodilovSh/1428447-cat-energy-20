@@ -35,6 +35,8 @@
     position: absolute;
     top: 16px;
     height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100vw;
     background-color: $basic-green;
 
