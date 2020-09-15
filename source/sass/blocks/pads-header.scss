@@ -1,0 +1,40 @@
+.pads-header {
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    padding-left: 38px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+    padding-left: 7px;
+    margin-bottom: 80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    height: 2px;
+    left: 50vw;
+    //transform: translateX(-50%);
+    width: 100vw;
+    background-color: $basic_green;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

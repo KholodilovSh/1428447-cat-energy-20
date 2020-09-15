@@ -28,13 +28,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 103px;
+    align-self: end;
+    margin-top: 0;
     margin-left: 79px;
-    margin-right: 8.1%;
+    margin-right: 100px;
     margin-bottom: 0;
     width: 245px;
     height: 289px;
-    align-self: center;
+    align-self: end;
     flex-shrink: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
@@ -45,8 +46,9 @@
 }
 
 .gift__img {
-  margin-top: 58px;
-  margin-bottom: 48px;
+  height: 63px;
+  margin-top: 62px;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     margin-top: 64px;
