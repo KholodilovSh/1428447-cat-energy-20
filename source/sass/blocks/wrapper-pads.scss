@@ -8,24 +8,4 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    height: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    background-color: $basic_green;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      top: 90px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 96px;
-    }
-  }
 }

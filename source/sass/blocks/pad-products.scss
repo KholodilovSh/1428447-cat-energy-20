@@ -13,21 +13,33 @@
 .pad-products__header {
   position: relative;
   margin: 0;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
     padding-left: 39px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 7.5vw;
-    padding-bottom: 88px;
+    // padding-left: 7.5vw;
+    // margin-bottom: 88px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: $basic_green;
+    z-index: -1;
   }
 }
 

@@ -15,10 +15,6 @@
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, $white 25%, $basic-grey 25%);
     border: none;
-
-    & .container {
-      // margin-left: 110px;
-    }
   }
 }
 
