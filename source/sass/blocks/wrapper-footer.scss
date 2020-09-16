@@ -8,5 +8,6 @@
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: 0 auto;
+    align-items: flex-start;
   }
 }

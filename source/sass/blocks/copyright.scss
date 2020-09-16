@@ -1,9 +1,9 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0 22px 0;
+  padding: 31px 0 22px 0;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 18px;
   color: $special_dark-grey;
@@ -11,12 +11,14 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
+    margin-top: 38px;
     margin-left: 0;
     margin-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 67px;
+    margin-top: 3px;
     margin-right: 110px;
   }
 
@@ -39,6 +41,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
+    padding-right: 15px;
   }
+}
+
+.copyright__icon {
+  height: 44px;
+  width: 35px;
+  margin-top: -14px;
+  margin-right: -4px;
 }

@@ -2,18 +2,20 @@
   display: block;
   text-align: center;
   background-color: $basic-grey;
-  padding-top: 42px;
-  padding-bottom: 32px;
+  padding-top: 45px;
+  padding-bottom: 30px;
   border-bottom: 1px solid $grey-4;
 
   @media (min-width: $tablet-width) {
     width: 128px;
+    padding-top: 64px;
+    padding-bottom: 32px;
     margin-left: 30px;
     margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 68px;
+    padding-top: 66px;
     margin-left: 110px;
   }
 
